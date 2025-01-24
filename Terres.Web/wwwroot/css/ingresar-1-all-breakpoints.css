@@ -1,0 +1,649 @@
+/* screen - ingresar-1-all-breakpoints */
+
+.ingresar-1-all-breakpoints {
+  align-items: center;
+  background-color: var(--seashell-peach);
+  display: flex;
+  flex-direction: column;
+  height: 844px;
+  overflow: hidden;
+  padding: 56px 0;
+  width: 390px;
+}
+
+.ingresar-1-all-breakpoints .top-app-bar {
+  align-items: center;
+  background-color: var(--derby);
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  margin-left: 3.0px;
+  padding: 8px 22px;
+  position: relative;
+  width: 393px;
+}
+
+.ingresar-1-all-breakpoints .frame {
+  height: 25px;
+  position: relative;
+  width: 104px;
+}
+
+.ingresar-1-all-breakpoints .leading-icon {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 48px;
+  justify-content: center;
+  position: relative;
+  width: 48px;
+}
+
+.ingresar-1-all-breakpoints .container {
+  align-items: center;
+  background-color: var(--tango);
+  border-radius: 100px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.ingresar-1-all-breakpoints .state-layer {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 8px;
+  position: relative;
+}
+
+.ingresar-1-all-breakpoints .icon {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.ingresar-1-all-breakpoints .title {
+  letter-spacing: 0;
+  line-height: 47px;
+  margin-bottom: -5px;
+  margin-left: 7.0px;
+  margin-top: 42px;
+  min-height: 42px;
+  white-space: nowrap;
+  width: 357px;
+}
+
+.ingresar-1-all-breakpoints .overlap-group1 {
+  height: 332px;
+  margin-right: 3.0px;
+  margin-top: 39px;
+  position: relative;
+  width: 361px;
+}
+
+.ingresar-1-all-breakpoints .component-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  left: 2px;
+  min-height: 315px;
+  position: absolute;
+  top: 0;
+  width: 359px;
+}
+
+.ingresar-1-all-breakpoints .email {
+  height: 19px;
+  letter-spacing: 0.25px;
+  line-height: 19px;
+  margin-left: 5px;
+  white-space: nowrap;
+}
+
+.ingresar-1-all-breakpoints .frame-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 55px;
+  min-width: 359px;
+}
+
+.ingresar-1-all-breakpoints .input-field {
+  align-items: center;
+  border: 1px solid;
+  border-color: var(--tango);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 18px 16px;
+  position: relative;
+  width: 359px;
+}
+
+.ingresar-1-all-breakpoints .label {
+  flex: 1;
+  letter-spacing: 0.25px;
+  line-height: 19px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.ingresar-1-all-breakpoints .frame-2 {
+  align-items: flex-start;
+  display: flex;
+  min-width: 359px;
+}
+
+.ingresar-1-all-breakpoints .overlap-group {
+  border-radius: 10px;
+  height: 55px;
+  position: relative;
+  width: 359px;
+}
+
+.ingresar-1-all-breakpoints .input-field-1 {
+  align-items: center;
+  border: 1px solid;
+  border-color: var(--terres-themesyslighterror);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  left: 0;
+  padding: 18px 16px;
+  position: absolute;
+  top: 0;
+  width: 359px;
+}
+
+.ingresar-1-all-breakpoints .label-1 {
+  color: var(--terres-themesyslighterror);
+  flex: 1;
+  font-family: var(--font-family-ibm_plex_sans);
+  font-size: var(--font-size-s);
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  line-height: 19px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.ingresar-1-all-breakpoints .trailing-icon-error {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 48px;
+  justify-content: center;
+  left: 310px;
+  position: absolute;
+  top: 4px;
+  width: 48px;
+}
+
+.ingresar-1-all-breakpoints .container-1 {
+  align-items: center;
+  border-radius: 100px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.ingresar-1-all-breakpoints .olvid-mi-contrasea {
+  color: var(--jaffa);
+  font-family: var(--font-family-ibm_plex_sans);
+  font-size: var(--font-size-s);
+  font-weight: 500;
+  height: 19px;
+  left: 220px;
+  letter-spacing: 0.25px;
+  line-height: 19px;
+  position: absolute;
+  top: 213px;
+  white-space: nowrap;
+  width:100%;
+  align-items: end;
+
+}
+
+.ingresar-1-all-breakpoints .button {
+  align-items: center;
+  background-color: var(--tango);
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+  height: 56px;
+  justify-content: center;
+  left: 0;
+  padding: 16px 24px;
+  position: absolute;
+  top: 276px;
+  width: 359px;
+}
+
+.ingresar-1-all-breakpoints .button-1 {
+  letter-spacing: 0.50px;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.ingresar-1-all-breakpoints .group-36699 {
+  align-items: center;
+  display: flex;
+  margin-right: 3.19px;
+  margin-top: 20px;
+  min-width: 351px;
+}
+
+.ingresar-1-all-breakpoints .o-ingres-con {
+  height: 16px;
+  letter-spacing: 0.50px;
+  line-height: 16px;
+  margin-left: 16px;
+  width: 81px;
+}
+
+.ingresar-1-all-breakpoints .line-20 {
+  margin-left: 12px;
+}
+
+.ingresar-1-all-breakpoints .button-with-centered-icon {
+  align-items: center;
+  background-color: var(--seashell-peach);
+  border: 1px solid;
+  border-color: var(--macaroni-and-cheese);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  margin-right: 5.0px;
+  margin-top: 16px;
+  padding: 18px 45px;
+  position: relative;
+  width: 357px;
+}
+
+.ingresar-1-all-breakpoints .no-tens-una-cuenta-creala-ac {
+  color: transparent;
+  cursor: pointer;
+  font-family: var(--font-family-ibm_plex_sans);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  height: 20px;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  margin-right: 5.0px;
+  margin-top: 37px;
+  min-width: 251px;
+  white-space: nowrap;
+}
+
+.ingresar-1-all-breakpoints .span {
+  letter-spacing: 0.04px;
+}
+
+.ingresar-1-all-breakpoints .span1 {
+  color: #545252;
+  letter-spacing: 0.04px;
+}
+
+.ingresar-1-all-breakpoints .line {
+  height: 1px;
+  margin-top: 5.0px;
+  object-fit: cover;
+  width: 120px;
+}
+/* screen - ingresar-2 */
+
+.ingresar-2 {
+  align-items: flex-start;
+  background-color: var(--basewhite);
+  display: flex;
+  height: 1024px;
+  width: 1440px;
+}
+
+.ingresar-2 .overlap-group1-1 {
+  align-items: flex-start;
+  background-image: url(../img/base-20.svg);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 1024px;
+  width: 1440px;
+}
+
+.ingresar-2 .top-nav {
+  -webkit-backdrop-filter: blur(80px) brightness(100%);
+  backdrop-filter: blur(80px) brightness(100%);
+  background-color: var(--seashell-peach);
+  height: 96px;
+  position: relative;
+  width: 1440px;
+}
+
+.ingresar-2 .line {
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 94px;
+  width: 1440px;
+}
+
+.ingresar-2 .label-2 {
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.ingresar-2 .button-3 {
+  align-items: center;
+  background-color: var(--seashell-peach);
+  border: 1px solid;
+  border-color: var(--hot-cinnamon);
+  border-radius: 32px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  justify-content: center;
+  padding: 12px 16px;
+  position: relative;
+  width: 150px;
+}
+
+.ingresar-2 .button-2 {
+  letter-spacing: 0.10px;
+  line-height: 16px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.ingresar-2 .button-4 {
+  align-items: center;
+  background-color: var(--tango);
+  border-radius: 32px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  justify-content: center;
+  padding: 12px 16px;
+  position: relative;
+  width: 150px;
+}
+
+.ingresar-2 .frame-3 {
+  height: 24px;
+  left: 83px;
+  position: absolute;
+  top: 38px;
+  width: 100px;
+}
+
+.ingresar-2 .headline {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-left: 160px;
+  margin-top: 88px;
+  position: relative;
+  width: 587px;
+}
+
+.ingresar-2 .title-1 {
+  letter-spacing: 0;
+  line-height: 65px;
+  margin-top: -1.00px;
+  position: relative;
+  width: 544px;
+}
+
+.ingresar-2 .no-tens-una-cuenta-creala-ac-1 {
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: 448px;
+}
+
+.ingresar-2 .frame-1171275458 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-left: 161px;
+  margin-top: 63px;
+  min-height: 94px;
+  width: 469px;
+}
+
+.ingresar-2 .email-1 {
+  height: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  white-space: nowrap;
+}
+
+.ingresar-2 .frame-1-1 {
+  align-items: flex-start;
+  background-color: var(--seashell-peach);
+  display: flex;
+  min-width: 469px;
+}
+
+.ingresar-2 .overlap-group-1 {
+  border-radius: 16px;
+  height: 60px;
+  position: relative;
+  width: 469px;
+}
+
+.ingresar-2 .input-field-2 {
+  border-color: var(--hot-cinnamon);
+  left: 0;
+  padding: 18px 32px 18px 13px;
+  position: absolute;
+  top: 0;
+}
+
+.ingresar-2 .icon-1 {
+  height: 24px;
+  left: 415px;
+  position: absolute;
+  top: 18px;
+  width: 24px;
+}
+
+.ingresar-2 .frame-1171275459 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-left: 160px;
+  margin-top: 21px;
+  min-height: 97px;
+  width: 469px;
+}
+
+.ingresar-2 .contrasea {
+  height: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 1px;
+  margin-top: -1px;
+  white-space: nowrap;
+}
+
+.ingresar-2 .input-field-3 {
+  border-color: var(--tango);
+  padding: 18px 32px 18px 16px;
+  position: relative;
+}
+
+.ingresar-2 .address {
+  flex: 1;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.ingresar-2 .icon-2 {
+  height: 28px;
+  margin-bottom: -2.00px;
+  margin-top: -2.00px;
+  position: relative;
+  width: 28px;
+}
+
+.ingresar-2 .olvid-mi-contrasea-1 {
+  align-self: center;
+  height: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-right: 334.0px;
+  margin-top: 7px;
+  min-width: 152px;
+  white-space: nowrap;
+  width:100%;
+  align-items: center;
+}
+
+.ingresar-2 .button-5 {
+  align-items: center;
+  background-color: var(--tango);
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+  height: 56px;
+  justify-content: center;
+  margin-left: 161px;
+  margin-top: 41px;
+  padding: 16px 24px;
+  position: relative;
+  width: 359px;
+}
+
+.ingresar-2 .button-6 {
+  letter-spacing: 0.50px;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.ingresar-2 .group-36699-1 {
+  align-items: center;
+  display: flex;
+  gap: 9px;
+  margin-left: 194px;
+  margin-top: 18px;
+  min-width: 294px;
+}
+
+.ingresar-2 .button-with-centered-icon-1 {
+  align-items: center;
+  background-color: var(--seashell-peach);
+  border: 1px solid;
+  border-color: var(--macaroni-and-cheese);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  margin-left: 162px;
+  margin-top: 18px;
+  padding: 18px 45px;
+  position: relative;
+  width: 357px;
+}
+
+.ingresar-2 .social-icon-google-1 {
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.ingresar-2 .group-1000002753 {
+  align-items: center;
+  align-self: flex-end;
+  display: flex;
+  gap: 23px;
+  margin-right: 83px;
+  margin-top: 43px;
+  min-width: 336px;
+}
+
+.ingresar-2 .group-1000002752 {
+  align-items: flex-start;
+  background-color: var(--tango);
+  border-radius: 40px;
+  box-shadow: 0px 4px 8px #0000001a;
+  display: flex;
+  height: 80px;
+  min-width: 80px;
+  padding: 16.2px;
+}
+
+.ingresar-2 .solid-communication-phone {
+  height: 48px;
+  width: 48px;
+}
+
+.ingresar-2 .necesitas-ayuda-esc {
+  line-height: 18px;
+  margin-top: 2.0px;
+  min-height: 50px;
+  min-width: 231px;
+}
+
+.ingresar-2 .span0 {
+  letter-spacing: -0.02px;
+  line-height: 26.1px;
+}
+
+.ingresar-2 .input-field {
+  align-items: center;
+  border: 1px solid;
+  border-radius: 16px;
+  display: flex;
+  gap: 10px;
+  height: 60px;
+  justify-content: center;
+  width: 469px;
+}
+@media screen and (max-width: 1439px) {
+  .screen.ingresar-2 { 
+    display: none;
+   }
+}
+@media screen and (min-width: 1440px) {
+  .screen.ingresar-1-all-breakpoints { 
+    display: none;
+   }
+}

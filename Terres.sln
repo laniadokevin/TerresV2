@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terres.Core", "Terres.Core\Terres.Core.csproj", "{F4AEC8CB-82E8-440B-96D3-62322F514BDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terres.Data", "Terres.Data\Terres.Data.csproj", "{43B3904C-E537-4B64-A2B0-8991ECD826DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terres.Web", "Terres.Web\Terres.Web.csproj", "{6E861BAB-7E43-4D46-B02C-CF2EC3801B66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4AEC8CB-82E8-440B-96D3-62322F514BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4AEC8CB-82E8-440B-96D3-62322F514BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4AEC8CB-82E8-440B-96D3-62322F514BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4AEC8CB-82E8-440B-96D3-62322F514BDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43B3904C-E537-4B64-A2B0-8991ECD826DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43B3904C-E537-4B64-A2B0-8991ECD826DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43B3904C-E537-4B64-A2B0-8991ECD826DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43B3904C-E537-4B64-A2B0-8991ECD826DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E861BAB-7E43-4D46-B02C-CF2EC3801B66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E861BAB-7E43-4D46-B02C-CF2EC3801B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E861BAB-7E43-4D46-B02C-CF2EC3801B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E861BAB-7E43-4D46-B02C-CF2EC3801B66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

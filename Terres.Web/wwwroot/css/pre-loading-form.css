@@ -1,0 +1,95 @@
+/* screen - pre-loading-form */
+
+.pre-loading-form {
+  background-color: var(--seashell-peach);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  min-height: 844px;
+  min-width: 393px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.pre-loading-form .top-app-bar {
+  align-items: center;
+  background-color: var(--derby);
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  margin-left: -1px;
+  margin-top: 56px;
+  padding: 8px 22px;
+  position: relative;
+  width: 393px;
+}
+
+.pre-loading-form .frame {
+  height: 25px;
+  position: relative;
+  width: 104px;
+}
+
+.pre-loading-form .leading-icon {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 48px;
+  justify-content: center;
+  position: relative;
+  width: 48px;
+}
+
+.pre-loading-form .container {
+  align-items: center;
+  background-color: var(--tango);
+  border-radius: 100px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.pre-loading-form .state-layer {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 8px;
+  position: relative;
+}
+
+.pre-loading-form .icon {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.pre-loading-form .tu-terreno-en-nmeros-al-instante {
+  height: 134px;
+  letter-spacing: 0;
+  line-height: 47px;
+  margin-left: 20px;
+  margin-top: 46px;
+  width: 355px;
+}
+
+.pre-loading-form .complet-los-datos-y {
+  height: 54px;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  margin-left: 20px;
+  margin-top: 21px;
+  width: 351px;
+}
+
+.pre-loading-form .layer_1 {
+  height: 251px;
+  margin-left: 20px;
+  margin-top: 37px;
+  width: 347px;
+}

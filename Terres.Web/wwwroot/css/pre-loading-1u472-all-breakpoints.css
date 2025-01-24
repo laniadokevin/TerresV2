@@ -1,0 +1,213 @@
+/* screen - carga-de-perfil-1u472 */
+
+.carga-de-perfil-1u472 {
+  background-color: var(--seashell-peach);
+  display: flex;
+  flex-direction: column;
+  min-height: 844px;
+  min-width: 393px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carga-de-perfil-1u472 .top-app-bar {
+  align-items: center;
+  background-color: var(--derby);
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  margin-left: -1px;
+  margin-top: 56px;
+  padding: 8px 22px;
+  position: relative;
+  width: 393px;
+}
+
+.carga-de-perfil-1u472 .frame {
+  height: 25px;
+  position: relative;
+  width: 104px;
+}
+
+.carga-de-perfil-1u472 .leading-icon {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 48px;
+  justify-content: center;
+  position: relative;
+  width: 48px;
+}
+
+.carga-de-perfil-1u472 .container {
+  align-items: center;
+  background-color: var(--tango);
+  border-radius: 100px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.carga-de-perfil-1u472 .state-layer {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 8px;
+  position: relative;
+}
+
+.carga-de-perfil-1u472 .icon {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.carga-de-perfil-1u472 .linear-determinate {
+  height: 12px;
+  margin-left: 16px;
+  margin-top: 48px;
+  width: 359px;
+}
+
+.carga-de-perfil-1u472 .title {
+  height: 134px;
+  letter-spacing: 0;
+  line-height: 47px;
+  margin-left: 19px;
+  margin-top: 31px;
+  width: 374px;
+}
+
+.carga-de-perfil-1u472 .layer_1 {
+  height: 278px;
+  margin-left: 21px;
+  margin-top: 96px;
+  width: 337px;
+}
+/* screen - pre-loading-1u472-all-breakpoints */
+
+.pre-loading-1u472-all-breakpoints {
+  align-items: flex-start;
+  background-image: url(../img/base-8.png);
+  background-size: 100% 100%;
+  cursor: pointer;
+  display: flex;
+  width: 1440px;
+}
+
+.pre-loading-1u472-all-breakpoints .overlap-group {
+  height: 1024px;
+  position: relative;
+  width: 1440px;
+}
+
+.pre-loading-1u472-all-breakpoints .content {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  height: 260px;
+  margin-left: 160px;
+  margin-top: 250px;
+  position: relative;
+  width: 573px;
+}
+
+.pre-loading-1u472-all-breakpoints .frame-867 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.pre-loading-1u472-all-breakpoints .text {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.pre-loading-1u472-all-breakpoints .estamos-verificando {
+  letter-spacing: 0;
+  line-height: 65px;
+  margin-top: -1.00px;
+  position: relative;
+  width: 526px;
+}
+
+.pre-loading-1u472-all-breakpoints .linear-determinate-1 {
+  height: 12px;
+  left: 161px;
+  position: absolute;
+  top: 168px;
+  width: 1120px;
+}
+
+.pre-loading-1u472-all-breakpoints .group-1000002753 {
+  gap: 23px;
+  left: 1021px;
+  position: absolute;
+  top: 853px;
+  width: 336px;
+}
+
+.pre-loading-1u472-all-breakpoints .group-1000002752 {
+  background-color: var(--tango);
+  border-radius: 40px;
+  box-shadow: 0px 4px 8px #0000001a;
+  width: 80px;
+}
+
+.pre-loading-1u472-all-breakpoints .solid-communication-phone {
+  height: 47.62px;
+  margin-left: 16.2px;
+  margin-top: 16.2px;
+  width: 47.62px;
+}
+
+.pre-loading-1u472-all-breakpoints .span0 {
+  letter-spacing: -0.02px;
+  line-height: 26.1px;
+}
+
+.pre-loading-1u472-all-breakpoints .span {
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.pre-loading-1u472-all-breakpoints .layer_1-1 {
+  height: 491px;
+  left: 664px;
+  position: absolute;
+  top: 242px;
+  width: 595px;
+}
+
+.pre-loading-1u472-all-breakpoints .group {
+  display: flex;
+  height: 80px;
+}
+@media screen and (max-width: 1439px) {
+  .screen.pre-loading-1u472-all-breakpoints { 
+    display: none;
+   }
+}
+@media screen and (min-width: 1440px) {
+  .screen.carga-de-perfil-1u472 { 
+    display: none;
+   }
+}

@@ -1,0 +1,85 @@
+/* screen - carga-de-perfil-2u472 */
+
+.carga-de-perfil-2u472 {
+  background-color: var(--seashell-peach);
+  display: flex;
+  flex-direction: column;
+  min-height: 844px;
+  min-width: 393px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carga-de-perfil-2u472 .top-app-bar {
+  align-items: center;
+  background-color: var(--derby);
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  margin-left: -1px;
+  margin-top: 56px;
+  padding: 8px 22px;
+  position: relative;
+  width: 393px;
+}
+
+.carga-de-perfil-2u472 .frame {
+  height: 25px;
+  position: relative;
+  width: 104px;
+}
+
+.carga-de-perfil-2u472 .leading-icon {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 48px;
+  justify-content: center;
+  position: relative;
+  width: 48px;
+}
+
+.carga-de-perfil-2u472 .container {
+  align-items: center;
+  background-color: var(--tango);
+  border-radius: 100px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.carga-de-perfil-2u472 .state-layer {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 8px;
+  position: relative;
+}
+
+.carga-de-perfil-2u472 .icon {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.carga-de-perfil-2u472 .linear-determinate {
+  height: 12px;
+  margin-left: 16px;
+  margin-top: 48px;
+  width: 359px;
+}
+
+.carga-de-perfil-2u472 .ya-verificamos-la-in {
+  height: 134px;
+  letter-spacing: 0;
+  line-height: 47px;
+  margin-left: 21px;
+  margin-top: 55px;
+  width: 359px;
+}

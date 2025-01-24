@@ -1,0 +1,183 @@
+﻿
+@{
+    Layout = null;
+}
+@model string
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Cresimed - Registro</title>
+
+    <meta name="description" content="" />
+    <meta name="google-site-verification" content="QTOFB13R7eeqa-RmLtZDCtCJinIaBXOSfetGfQVCnRg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="~/assets/img/favicon/favicon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="~/assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="~/assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="~/assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="~/assets/vendor/css/rtl/core.css" />
+    <link rel="stylesheet" href="~/assets/vendor/css/rtl/theme-default.css" />
+    <link rel="stylesheet" href="~/assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="~/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="~/assets/vendor/libs/typeahead-js/typeahead.css" />
+    <!-- Vendor -->
+    <link rel="stylesheet" href="~/assets/vendor/libs/bs-stepper/bs-stepper.css" />
+    <link rel="stylesheet" href="~/assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
+    <link rel="stylesheet" href="~/assets/vendor/libs/select2/select2.css" />
+    <link rel="stylesheet" href="~/assets/vendor/libs/formvalidation/dist/css/formValidation.min.css" />
+
+    <!-- Page CSS -->
+    <!-- Page -->
+    <link rel="stylesheet" href="~/assets/vendor/css/pages/page-auth.css" />
+    <!-- Helpers -->
+    <script src="~/assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="~/assets/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="~/assets/js/config.js"></script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T8V7DR3');
+    </script>
+    <!-- End Google Tag Manager -->
+ 
+
+    <meta name="facebook-domain-verification" content="oz2e09nnn0cdazha7xhsyz3jbt9wsy" />
+                    <!-- Meta Pixel Code -->
+                    <script>
+                        !function (f, b, e, v, n, t, s) {
+                            if (f.fbq) return; n = f.fbq = function () {
+                                n.callMethod ?
+                                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                            };
+                            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                            n.queue = []; t = b.createElement(e); t.async = !0;
+                            t.src = v; s = b.getElementsByTagName(e)[0];
+                            s.parentNode.insertBefore(t, s)
+                        }(window, document, 'script',
+                            'https://connect.facebook.net/en_US/fbevents.js');
+                        fbq('init', '210676631483200');
+                        fbq('track', 'PageView');
+                    </script>
+                    <noscript>
+                        <img height="1" width="1" style="display:none"
+                             src="https://www.facebook.com/tr?id=210676631483200&ev=PageView&noscript=1" />
+                    </noscript>
+                    <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8V7DR3"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Content -->
+
+    <div class="authentication-wrapper authentication-cover">
+        <div class="authentication-inner row m-0">
+            <!-- Left Text -->
+            <div class="d-none d-lg-flex col-lg-4 align-items-center justify-content-end p-5 pe-0">
+                <div class="w-px-400">
+                    <img src="../assets/img/illustrations/create-account-light.png"
+                         class="img-fluid scaleX-n1-rtl"
+                         alt="multi-steps"
+                         width="600" />
+                </div>
+            </div>
+            <!-- /Left Text -->
+            <!--  Multi Steps Registration -->
+            <div class="d-flex col-lg-8 authentication-bg p-sm-5 p-3 " style="background-color:#FFF;">
+                <div class="d-flex flex-column w-px-700 mx-auto">
+                    <!-- Logo -->
+                    <div class="app-brand border-bottom mx-3 mb-0">
+
+                            <span class="app-brand-logo demo mb-3">
+                        <a href="https://campus.cresimed.com" style="text-decoration: inherit;color: inherit;">
+                                <img src="~/assets/img/favicon/Logo.png" />
+                        </a>
+                            </span>
+                            <span class="app-brand-text demo h3 mb-3 fw-bold">
+                            <a href="https://campus.cresimed.com" style="text-decoration: inherit;color: inherit;">
+                                Cresimed
+                        </a>
+                                </span>
+                        
+                    </div>
+                    <!-- /Logo -->
+
+                    <div class="my-auto">
+                        <div id="multiStepsValidation" class="bs-stepper shadow-none">
+
+                            <div class="bs-stepper-content pt-4">
+                               No se puede registrar: @Model
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / Multi Steps Registration -->
+        </div>
+    </div>
+
+    <script>
+        // Check selected custom option
+        window.Helpers.initCustomOptionCheck();
+    </script>
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <!-- / Content -->
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="~/assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="~/assets/vendor/libs/popper/popper.js"></script>
+    <script src="~/assets/vendor/js/bootstrap.js"></script>
+    <script src="~/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="~/assets/vendor/libs/hammer/hammer.js"></script>
+
+    <script src="~/assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="~/assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+    <script src="~/assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+    <!-- Vendors JS -->
+    <script src="~/assets/vendor/libs/cleavejs/cleave.js"></script>
+    <script src="~/assets/vendor/libs/cleavejs/cleave-phone.js"></script>
+    <script src="~/assets/vendor/libs/bs-stepper/bs-stepper.js"></script>
+    <script src="~/assets/vendor/libs/select2/select2.js"></script>
+    <script src="~/assets/vendor/libs/formvalidation/dist/js/FormValidation.min.js"></script>
+    <script src="~/assets/vendor/libs/formvalidation/dist/js/plugins/Bootstrap5.min.js"></script>
+    <script src="~/assets/vendor/libs/formvalidation/dist/js/plugins/AutoFocus.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="~/assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="~/assets/js/pages-auth-multisteps.js"></script>
+  
+</body>

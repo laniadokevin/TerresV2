@@ -1,0 +1,668 @@
+/* screen - home-comprador */
+
+.home-comprador {
+  background-color: #fef8ee;
+  margin: 0px;
+  min-height: 3489px;
+  min-width: 393px;
+  opacity: 1;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.home-comprador .rectangle-1-C61RwL {
+  --z-index: 0;
+  background-color: #fdeed7;
+  height: 553px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 393px;
+}
+
+.home-comprador .rectangle-2-C61RwL {
+  --z-index: 1;
+  background-color: #fdeed7;
+  height: 634px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 1225px;
+  width: 393px;
+}
+
+.home-comprador .descubr-el-terreno-C61RwL {
+  --z-index: 2;
+  background-color: transparent;
+  color: #763318;
+  font-family: 'IBM Plex Serif', Helvetica;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 500;
+  height: 117px;
+  left: 17px;
+  letter-spacing: 0.00px;
+  line-height: 47px;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 206px;
+  width: 361px;
+}
+
+.home-comprador .filtr-por-barrio-c-C61RwL {
+  --z-index: 3;
+  background-color: transparent;
+  color: #763318;
+  font-family: 'IBM Plex Sans', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 20px;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 377px;
+  width: 359px;
+}
+
+.home-comprador .span0-wL5Hmq {
+  font-style: normal;
+  letter-spacing: 0.04px;
+}
+
+.home-comprador .span1-wL5Hmq {
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.04px;
+}
+
+.home-comprador .eleg-la-zona-empez-tu-proyecto-C61RwL {
+  --z-index: 4;
+  background-color: transparent;
+  color: #763318;
+  font-family: 'IBM Plex Serif', Helvetica;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 500;
+  height: 133px;
+  left: 20px;
+  letter-spacing: 0.00px;
+  line-height: 47px;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 900px;
+  width: 363px;
+}
+
+.home-comprador .hace-click-y-conoce-C61RwL {
+  --z-index: 5;
+  background-color: transparent;
+  color: #763318;
+  font-family: 'IBM Plex Sans', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 20px;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 1061px;
+  white-space: nowrap;
+  width: 347px;
+}
+
+.home-comprador .encontra-el-terreno-C61RwL {
+  --z-index: 6;
+  background-color: transparent;
+  color: #763318;
+  font-family: 'IBM Plex Serif', Helvetica;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 500;
+  height: 117px;
+  left: 20px;
+  letter-spacing: 0.00px;
+  line-height: 47px;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 1546px;
+  width: 363px;
+}
+
+.home-comprador .filtr-las-opciones-C61RwL {
+  --z-index: 7;
+  background-color: transparent;
+  color: #763318;
+  font-family: 'IBM Plex Sans', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 20px;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 1696px;
+  width: 363px;
+}
+
+.home-comprador .rectangle-28-C61RwL {
+  --z-index: 8;
+  background-color: #fdeed7;
+  height: 376px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 2519px;
+  width: 393px;
+}
+
+.home-comprador .layer_1-C61RwL {
+  --z-index: 9;
+  background-color: transparent;
+  background-image: url(../img/layer-1-7@2x.png);
+  background-size: 100% 100%;
+  height: 255px;
+  left: 17px;
+  opacity: 1;
+  position: absolute;
+  top: 2580px;
+  width: 361px;
+}
+
+.home-comprador .lotes-estudiados-por-terres-C61RwL {
+  --z-index: 10;
+  background-color: transparent;
+  color: #763318;
+  font-family: 'IBM Plex Serif', Helvetica;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 500;
+  height: 111px;
+  left: 22px;
+  letter-spacing: 0.00px;
+  line-height: 47px;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 1886px;
+  width: 354px;
+}
+
+.home-comprador .text-container-C61RwL {
+  --z-index: 11;
+  align-items: center;
+  background-color: #fdeed7;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+  left: 15px;
+  opacity: 1;
+  padding: 18px 16px;
+  position: absolute;
+  top: 2033px;
+  width: 361px;
+}
+
+.home-comprador .heading-07ABRp {
+  --z-index: 0;
+  align-self: stretch;
+  background-color: transparent;
+  color: #b84a16;
+  font-family: 'IBM Plex Serif', Helvetica;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.00px;
+  line-height: 47px;
+  margin-top: -1.00px;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+}
+
+.home-comprador .text-07ABRp {
+  --z-index: 1;
+  background-color: transparent;
+  color: #b84a16;
+  font-family: 'IBM Plex Sans', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.home-comprador .text-container-VMr6Om {
+  --z-index: 12;
+  align-items: center;
+  background-color: #fdeed7;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+  left: 15px;
+  opacity: 1;
+  padding: 18px 16px;
+  position: absolute;
+  top: 2271px;
+  width: 361px;
+}
+
+.home-comprador .heading-YszShZ {
+  --z-index: 0;
+  align-self: stretch;
+  background-color: transparent;
+  color: #b84a16;
+  font-family: 'IBM Plex Serif', Helvetica;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.00px;
+  line-height: 47px;
+  margin-top: -1.00px;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+}
+
+.home-comprador .text-YszShZ {
+  --z-index: 1;
+  align-self: stretch;
+  background-color: transparent;
+  color: #b84a16;
+  font-family: 'IBM Plex Sans', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+}
+
+.home-comprador .text-container-mzXdH9 {
+  --z-index: 13;
+  align-items: center;
+  background-color: #fdeed7;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+  left: 15px;
+  opacity: 1;
+  padding: 18px 16px;
+  position: absolute;
+  top: 2152px;
+  width: 361px;
+}
+
+.home-comprador .heading-qYQvWG {
+  --z-index: 0;
+  align-self: stretch;
+  background-color: transparent;
+  color: #b84a16;
+  font-family: 'IBM Plex Serif', Helvetica;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.00px;
+  line-height: 47px;
+  margin-top: -1.00px;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+}
+
+.home-comprador .text-qYQvWG {
+  --z-index: 1;
+  align-self: stretch;
+  background-color: transparent;
+  color: #b84a16;
+  font-family: 'IBM Plex Sans', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+}
+
+.home-comprador .top-app-bar-C61RwL {
+  --z-index: 14;
+  align-items: center;
+  background-color: #763318;
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  left: 0px;
+  opacity: 1;
+  padding: 8px 22px;
+  position: absolute;
+  top: 60px;
+  width: 393px;
+}
+
+.home-comprador .frame-nAUKla {
+  --z-index: 0;
+  background-color: transparent;
+  background-image: url(../img/frame-33@2x.png);
+  background-size: 100% 100%;
+  height: 25px;
+  opacity: 1;
+  position: relative;
+  width: 104px;
+}
+
+.home-comprador .container-r8xl7j {
+  --z-index: 0;
+  align-items: center;
+  background-color: #fef8ee;
+  border-radius: 100px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  opacity: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-comprador .icon-87lL0v {
+  --z-index: 0;
+  background-color: transparent;
+  background-image: url(../img/icon-106@2x.png);
+  background-size: 100% 100%;
+  height: 24px;
+  opacity: 1;
+  position: relative;
+  width: 24px;
+}
+
+.home-comprador .button-C61RwL {
+  --z-index: 15;
+  align-items: center;
+  background-color: #b84a16;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  height: 56px;
+  justify-content: center;
+  left: 16px;
+  opacity: 1;
+  padding: 16px 24px;
+  position: absolute;
+  top: 451px;
+  width: 359px;
+}
+
+.home-comprador .button-VMr6Om {
+  --z-index: 16;
+  align-items: center;
+  background-color: #b84a16;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  height: 56px;
+  justify-content: center;
+  left: 16px;
+  opacity: 1;
+  padding: 16px 24px;
+  position: absolute;
+  top: 1111px;
+  width: 359px;
+}
+
+.home-comprador .button-mzXdH9 {
+  --z-index: 17;
+  align-items: center;
+  background-color: #b84a16;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  height: 56px;
+  justify-content: center;
+  left: 16px;
+  opacity: 1;
+  padding: 16px 24px;
+  position: absolute;
+  top: 1755px;
+  width: 359px;
+}
+
+.home-comprador .button-QxM5SU {
+  --z-index: 18;
+  align-items: center;
+  background-color: #b84a16;
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+  height: 56px;
+  justify-content: center;
+  left: 16px;
+  opacity: 1;
+  padding: 16px 24px;
+  position: absolute;
+  top: 2418px;
+  width: 359px;
+}
+
+.home-comprador .button-Vy3eJf {
+  --z-index: 0;
+  background-color: transparent;
+  color: #fef8ee;
+  font-family: 'IBM Plex Sans', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.50px;
+  line-height: 24px;
+  margin-top: -1.00px;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.home-comprador .wf-footer-C61RwL {
+  --z-index: 19;
+  align-items: flex-start;
+  background-color: #40180a;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 594px;
+  justify-content: center;
+  left: 0px;
+  opacity: 1;
+  overflow: hidden;
+  padding: 20px 21px 18px;
+  position: absolute;
+  top: 2895px;
+  width: 393px;
+}
+
+.home-comprador .layer_1-VMr6Om {
+  --z-index: 20;
+  background-color: transparent;
+  background-image: url(../img/layer-1-13@2x.png);
+  background-size: 100% 100%;
+  height: 275px;
+  left: 22px;
+  opacity: 1;
+  position: absolute;
+  top: 601px;
+  width: 347px;
+}
+
+.home-comprador .layer_1-mzXdH9 {
+  --z-index: 21;
+  background-color: transparent;
+  background-image: url(../img/layer-1-9@2x.png);
+  background-size: 100% 100%;
+  height: 228px;
+  left: 22px;
+  opacity: 1;
+  position: absolute;
+  top: 1275px;
+  width: 347px;
+}
+/* screen - form-pre-loading */
+
+.form-pre-loading {
+  background-color: #ffffff;
+  cursor: pointer;
+  margin: 0px;
+  min-height: 844px;
+  min-width: 393px;
+  opacity: 1;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.form-pre-loading .rectangle-1-C61RwL {
+  --z-index: 0;
+  background-color: transparent;
+  background-image: url(../img/rectangle-1-2.png);
+  background-size: 100% 100%;
+  height: 844px;
+  left: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  width: 393px;
+}
+
+.form-pre-loading .hay-un-terreno-en-la-zona-que-quers-C61RwL {
+  --z-index: 1;
+  background-color: transparent;
+  color: #763318;
+  font-family: 'IBM Plex Serif', Helvetica;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 500;
+  height: 134px;
+  left: 21px;
+  letter-spacing: 0.00px;
+  line-height: 47px;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 173px;
+  width: 355px;
+}
+
+.form-pre-loading .encontralo-ac-y-con-C61RwL {
+  --z-index: 2;
+  background-color: transparent;
+  color: #763318;
+  font-family: 'IBM Plex Sans', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 21px;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  opacity: 1;
+  position: absolute;
+  text-align: left;
+  top: 330px;
+  width: 361px;
+}
+
+.form-pre-loading .top-app-bar-C61RwL {
+  --z-index: 3;
+  align-items: center;
+  background-color: #763318;
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  left: 0px;
+  opacity: 1;
+  padding: 8px 22px;
+  position: absolute;
+  top: 60px;
+  width: 393px;
+}
+
+.form-pre-loading .frame-nAUKla {
+  --z-index: 0;
+  background-color: transparent;
+  background-image: url(../img/frame-33@2x.png);
+  background-size: 100% 100%;
+  height: 25px;
+  opacity: 1;
+  position: relative;
+  width: 104px;
+}
+
+.form-pre-loading .container-r8xl7j {
+  --z-index: 0;
+  align-items: center;
+  background-color: #fef8ee;
+  border-radius: 100px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  opacity: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.form-pre-loading .icon-87lL0v {
+  --z-index: 0;
+  background-color: transparent;
+  background-image: url(../img/icon-106@2x.png);
+  background-size: 100% 100%;
+  height: 24px;
+  opacity: 1;
+  position: relative;
+  width: 24px;
+}
+
+.form-pre-loading .layer_1-C61RwL {
+  --z-index: 4;
+  background-color: transparent;
+  background-image: url(../img/layer-1-10@2x.png);
+  background-size: 100% 100%;
+  height: 253px;
+  left: 21px;
+  opacity: 1;
+  position: absolute;
+  top: 422px;
+  width: 350px;
+}

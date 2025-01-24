@@ -1,0 +1,351 @@
+﻿@using System.Security.Claims;
+@using Terres.Core.OLD.Entities.ViewModel.Campus
+
+@{
+	Layout = null;
+}
+@model DashboardViewModel
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+	<meta name="og:type" content="website" />
+	<meta name="twitter:card" content="photo" />
+	<link rel="stylesheet" type="text/css" href="/css/menu-vendedores.css" />
+	<link rel="stylesheet" type="text/css" href="/css/home-v-1.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-001-variante-direccion-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-001-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-002-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-003-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-004-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/pre-loading-1u472-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/pre-loading-2u472-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/dashboard-onboarding.css" />
+	<link rel="stylesheet" type="text/css" href="/css/actividad-2u472-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/onboarding-dashboard-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/ingresar-1-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/tu-terreno-manana-pop-up-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/about-1-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/crear-cuenta-1u472-1-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/editar-perfil-1u472-all-breakpoints.css" />
+
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+	<style>
+		.screen {
+			display: block;
+		}
+
+			.screen.active {
+				display: block;
+			}
+	</style>
+	<style>
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+
+		.dropdown-button {
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			padding: 0;
+		}
+
+		.user-info {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+		}
+
+		.avatar {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-color: #f1c38e;
+		}
+
+		.dropdown-menu {
+			position: absolute;
+			top: 100%;
+			right: 0;
+			background-color: #fff7ed;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			border-radius: 8px;
+			padding: 10px;
+			display: none;
+			z-index: 1000;
+		}
+
+			.dropdown-menu a {
+				color: #d9480f;
+				text-decoration: none;
+				display: block;
+				padding: 8px 16px;
+				border-radius: 4px;
+			}
+
+				.dropdown-menu a:hover {
+					background-color: #ffe4d2;
+				}
+
+		.dropdown-button:hover + .dropdown-menu,
+		.dropdown-button:focus + .dropdown-menu {
+			display: block;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="/css/styleguide.css" />
+	<link rel="stylesheet" type="text/css" href="/css/globals.css" />
+</head>
+<body style="margin: 0; background: #fef8ee">
+	<input type="hidden" id="anPageName" name="page" value="home-v-1" />
+
+	<div id="view-form8" class="view">
+		<div class="container-center-horizontal">
+			<div class="dashboard-onboarding screen">
+				<div class="overlap-group2">
+					<img class="base" src="/img/base.png" alt="Base" />
+					
+					<div class="frame-1171275428">
+						<img class="frame" src="/img/frame@2x.png" alt="Frame" />
+						<div class="x01">
+							<img class="icon-home" src="/img/icon-home@2x.png" alt="icon-home" />
+							<div class="text">Home</div>
+						</div>
+						<div onclick="redirect('/Account/Perfil')" class="flex-row pointer">
+							<img class="icon-user" src="/img/icon-user@2x.png" alt="icon-user" />
+							<div class="group-1000002714">
+								<div class="text-1 text-3 ibmplexsans-medium-brown-pod-18px">Perfil</div>
+							</div>
+						</div>
+						<div class="group-1000002718" href="@Url.Action("Actividad", "Account")">
+							<div class="mdimessage-processing-outline">
+								<div class="group-36700">
+									<div class="overlap-group">
+										<img class="icon-message-circle" src="/img/icon-message-circle@2x.png" alt="icon-message-circle" />
+										<div class="badge"><div class="badge-label valign-text-middle">3</div></div>
+									</div>
+								</div>
+							</div>
+							<a href="@Url.Action("Actividad", "Account")">
+								<div class="text-2 text-3 ibmplexsans-medium-brown-pod-18px">Actividad</div>
+							</a>
+						</div>
+						<div class="group-1000002720" >
+							<div class="sign-out-icon">
+								<div class="group-923"><img class="union" src="/img/union@2x.png" alt="Union" /></div>
+							</div>
+							<div class="salir ibmplexsans-medium-brown-pod-18px">Salir</div>
+						</div>
+					</div>
+					<header class="header">
+						<div class="x4xl ibmplexsans-medium-brown-pod-38px">Dashboard</div>
+						<div class="paragraph">Dashboard / Lote</div>
+					</header>
+					<div class="nar">
+						<div class="field">
+							<img class="icons" src="/img/icons@2x.png" alt="Icons" />
+							<div class="search ibmplexsans-normal-tango-16px">Buscador</div>
+						</div>
+						<img class="icons-1" src="/img/icons-1@2x.png" alt="Icons" />
+						<img class="fills-26515179-04ac"
+							 src="/img/fills-26515179-04ac-8067-8004-2d59bf943290@2x.png"
+							 alt="fills-26515179-04ac-8067-8004-2d59bf943290" />
+
+						<div class="frame-20">
+							<div class="dropdown">
+								<button class="dropdown-button">
+									<div class="user-info">
+										<img class="avatar" src="/img/avatar@2x.png" alt="Avatar" />
+										<span>@(Model.User?.Email ?? "Tomás. O")</span>
+									</div>
+								</button>
+								<div class="dropdown-menu">
+									<p>Editar perfil</p>
+									<br />
+									<br />
+									<p >¿Necesitas ayuda?</p>
+									<a href="@Url.Action("SignOut", "Account")">
+										<br />
+										<br />
+											Cerrar sesión
+									</a>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+					<a href="@Url.Action("Create","Lote")">
+							
+						<div class="group-36742">
+
+							<img class="plus" src="/img/plus.svg" alt="Plus" />
+						</div>
+					</a>
+					<div class="lotes-container" id="lotesContainerDesktop">
+						@foreach (var item in Model.Lotes)
+						{
+							<div class="overlap-group1">
+								<div class="flex-row-1">
+									<img class="alert-octagon" src="/img/alert-octagon@2x.png" alt="Alert octagon" />
+									<div class="no-autorizado valign-text-middle ibmplexsans-medium-macaroni-and-cheese-13px">
+										No autorizado
+									</div>
+								</div>
+								<h1 class="title valign-text-middle ibmplexserif-medium-hot-cinnamon-43px">@item.Direccion</h1>
+								<div class="button-container">
+									<a href="@Url.Action("Detalle", "Lote", new { id = item.Id })">
+
+										<article class="button-1">
+											<div class="button valign-text-middle ibmplexsans-medium-seashell-peach-13px pointer">Tu terreno hoy</div>
+										</article>
+									</a>
+									<article class="button-2">
+										<div href="#" class="button valign-text-middle ibmplexsans-medium-macaroni-and-cheese-13px pointer">
+											Tu terreno mañana
+										</div>
+									</article>
+								</div>
+							</div>						}
+						
+					</div>
+					<div class="button-3">
+						<p class="valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px">
+							¿Por qué autorizar mi terreno?
+						</p>
+					</div>
+					<div class="group-1000002753">
+						<div class="group-1000002752">
+							<img class="solid-communication-phone"
+								 src="/img/solid-communication-phone-11@2x.png"
+								 alt="Solid/Communication/Phone" />
+						</div>
+						<p class="necesitas-ayuda-esc ibmplexsans-medium-white-18px">
+							<span class="span0 ibmplexsans-medium-brown-pod-18px">Necesitas ayuda? <br /></span><span class="span ibmplexsans-normal-brown-pod-16px">Escribinos al </span><span class="span ibmplexsans-normal-tango-16px">+54 9 11 5039609</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="onboarding-dashboard-all-breakpoints screen">
+			<div class="top-app-bar">
+				<img class="frame-1" src="/img/frame-20@2x.png" alt="Frame" />
+				<div class="leading-icon">
+					<div class="container">
+						<div class="state-layer-1 state-layer-4"><img class="icon" src="/img/icon-86@2x.png" alt="Icon" /></div>
+					</div>
+				</div>
+			</div>
+			<div class="lotes-container" id="lotesContainerMobile">
+				@foreach(var item in Model.Lotes)
+				{
+					<div class="group-36741 group">
+						<div class="overlap-group2-1">
+							<div class="flex-row-2">
+								<img class="alert-octagon-1" src="/img/alert-octagon@2x.png" alt="Alert octagon" />
+								<div class="no-autorizado-1 valign-text-middle ibmplexsans-medium-macaroni-and-cheese-13px">
+									No autorizado
+								</div>
+							</div>
+							<h1 class="title-1 valign-text-middle ibmplexserif-medium-hot-cinnamon-43px">@item.Direccion</h1>
+							<div class="button-container-1">
+								<article class="button-6 pointer" onclick="redirect('/Lote/Detalle?id=' + @item.Id)">
+									<div class="button-5 valign-text-middle ibmplexsans-medium-seashell-peach-13px">Conocé el analisis</div>
+								</article>
+								<a href="#">
+									<article class="button-7">
+										<div class="button-5 valign-text-middle ibmplexsans-medium-macaroni-and-cheese-13px">
+											Tu terreno mañana
+										</div>
+									</article>
+								</a>
+							</div>
+						</div>
+					</div>
+				}
+
+			</div>
+
+			<div class="snackbar">
+				<div class="snackbar-1">
+					<div class="content">
+						<p class="supporting-text ibmplexsans-semi-bold-peanut-16px">
+							<span class="span0-1 ibmplexsans-semi-bold-peanut-16px">¿Por qué autorizar mi terreno? <br /></span><span class="span1">
+								Es el valor que tiene el terreno por metro cuadrado vendible. Nuestra fórmula nos permite conocer el
+								número en cada manzana de la ciudad.
+							</span>
+						</p>
+					</div>
+					<div class="action">
+						<div class="inverse-button">
+							<div class="state-layer-2 state-layer-4">
+								<div class="label-text-1 valign-text-middle">Entendido</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="@Url.Action("Create","Lote")">
+				<div class="frame-1171275531">
+					<img class="plus-1" src="/img/plus@2x.png" alt="Plus" />
+					<div class="x2424-1 ibmplexsans-normal-tango-16px">Cargar otro terreno</div>
+				</div>
+			</a>
+			<div class="group-24 group">
+				<div class="overlap-group1-1">
+					<div class="navigation-bar">
+						<article class="segment">
+							<div class="icon-container-1">
+								<div class="state-layer-3 state-layer-4"></div>
+							</div>
+							<div class="label-text ibmplexsans-medium-brown-pod-14px">Home</div>
+						</article>
+						<article class="segment">
+							<div class="icon-container">
+								<div class="state-layer"></div>
+							</div>
+							<a href="@Url.Action("Actividad", "Account")">
+								<div class="label-text ibmplexsans-medium-brown-pod-14px">Actividad</div>
+							</a>
+						</article>
+						<article class="segment">
+							<div class="icon-container">
+								<div class="state-layer"></div>
+							</div>
+							<a href="@Url.Action("Perfil", "Account")">
+								<div class="label-text ibmplexsans-medium-brown-pod-14px">Perfil</div>
+							</a>
+						</article>
+					</div>
+					<img class="icon-home-1" src="/img/icon-home@2x.png" alt="icon-home" />
+					<a href="@Url.Action("Perfil", "Account")">
+						<img class="icon-user-1" src="/img/icon-user@2x.png" alt="icon-user" /> 
+					</a>
+					<div class="overlap-group-1">
+						<img class="icon-message-circle-1" src="/img/icon-message-circle@2x.png" alt="icon-message-circle" />
+						<div class="badge-1">
+							<div class="badge-label-1 valign-text-middle ibmplexsans-semi-bold-white-12px">3</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+	<script src="/js/redirect.js"></script>
+	
+</body>
+</html>

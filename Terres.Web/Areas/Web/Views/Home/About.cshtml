@@ -1,0 +1,343 @@
+﻿@using System.Security.Claims;
+@using Terres.Core.OLD.Entities.ViewModel.Campus
+
+@{
+	Layout = null;
+}
+@model DashboardViewModel
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+	<meta name="og:type" content="website" />
+	<meta name="twitter:card" content="photo" />
+	<link rel="stylesheet" type="text/css" href="/css/menu-vendedores.css" />
+	<link rel="stylesheet" type="text/css" href="/css/home-v-1.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-001-variante-direccion-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-001-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-002-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-003-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-004-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/pre-loading-1u472-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/pre-loading-2u472-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/dashboard-onboarding.css" />
+	<link rel="stylesheet" type="text/css" href="/css/actividad-2u472-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/onboarding-dashboard-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/ingresar-1-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/tu-terreno-manana-pop-up-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/about-1-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/crear-cuenta-1u472-1-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/editar-perfil-1u472-all-breakpoints.css" />
+
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+	<style>
+		.screen {
+			display: block;
+		}
+
+			.screen.active {
+				display: block;
+			}
+	</style>
+	<link rel="stylesheet" type="text/css" href="/css/styleguide.css" />
+	<link rel="stylesheet" type="text/css" href="/css/globals.css" />
+</head>
+<body style="margin: 0; background: #fef8ee">
+	<input type="hidden" id="anPageName" name="page" value="home-v-1" />
+
+	<!-- PAGINA ABOUT 11: Sobre Nosotros -->
+	<div id="view-about11" >
+		<div class="container-center-horizontal">
+			<div class="about-1-all-breakpoints screen">
+				<div class="top-app-bar">
+					<img class="frame" src="/img/frame-50.svg" alt="Frame" />
+					<div class="leading-icon">
+						<div class="container">
+							<div class="state-layer"><img class="icon" src="/img/icon-51.svg" alt="Icon" /></div>
+						</div>
+					</div>
+				</div>
+				<h1 class="h1-home valign-text-middle ibmplexserif-medium-peanut-43px">Expertos en tierras</h1>
+				<p class="body-home ibmplexsans-normal-peanut-16px">
+					<span class="span ibmplexsans-normal-peanut-16px">Somos una empresa que se </span><span class="span ibmplexsans-medium-peanut-16px">dedica</span><span class="span ibmplexsans-normal-peanut-16px">&nbsp;</span><span class="span ibmplexsans-medium-peanut-16px">exclusivamente a comercializar terrenos. <br /></span><span class="span ibmplexsans-normal-peanut-16px"></span>
+				</p>
+				<p class="body-home-1 ibmplexsans-normal-peanut-16px">
+					En Terres los vendedores pueden tener conocimiento real acerca de su propiedad y venderla a compradores
+					calificados que buscan lo que ellos ofrecen
+				</p>
+				<div class="button-4">
+					<div class="button valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px">Agendemos una cita</div>
+				</div>
+				<div class="concenos ibmplexsans-medium-peanut-32px">Conócenos</div>
+				<div class="frame-1171275536 frame-1">
+					<div class="overlap-group">
+						<img class="image-3" src="/img/image-2@2x.png" alt="image 2" />
+						<div class="founder-ceo ibmplexsans-medium-hot-cinnamon-14px">Founder &amp; CEO</div>
+						<div class="nicols-zancare ibmplexsans-medium-peanut-20px">Nicolás Zancare</div>
+						<a href="#" >
+							<div class="button-1">
+								<div class="button-2 valign-text-middle ibmplexsans-medium-hot-cinnamon-13px">Linkedin</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="frame-117127553 frame-1">
+					<div class="overlap-group">
+						<img class="image" src="/img/image@2x.png" alt="image" />
+						<div class="founder-ceo ibmplexsans-medium-hot-cinnamon-14px">Founder &amp; CEO</div>
+						<div class="federico-akerman ibmplexsans-medium-peanut-20px">Federico Akerman</div>
+						<a href="#" >
+							<div class="button-1">
+								<div class="button-2 valign-text-middle ibmplexsans-medium-hot-cinnamon-13px">Linkedin</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="frame-117127553 frame-1">
+					<div class="overlap-group">
+						<div class="image-1 image-3"></div>
+						<div class="titulo ibmplexsans-medium-hot-cinnamon-14px">Titulo</div>
+						<div class="nombre-y-apellido ibmplexsans-medium-peanut-20px">Nombre y apellido</div>
+						<a href="#" >
+							<div class="button-1">
+								<div class="button-2 valign-text-middle ibmplexsans-medium-hot-cinnamon-13px">Linkedin</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="button-3">
+					<div class="button valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px">Agendemos una cita</div>
+				</div>
+				<div class="quizs-te-preguntes ibmplexsans-medium-peanut-32px">Quizás te preguntes</div>
+				<div class="accordion">
+					<article class="accordion-item-1">
+						<div class="accordion-title-1">
+							<div class="title ibmplexsans-semi-bold-hot-cinnamon-16px">¿Qué es Terres?</div>
+							<img class="chevron" src="/img/chevron-up.svg" alt="Chevron up" />
+						</div>
+						<div class="accordion-content accordion-1">
+							<p class="body valign-text-middle ibmplexsans-normal-peanut-16px">
+								Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.
+							</p>
+						</div>
+					</article>
+					<article class="accordion-item accordion-1">
+						<div class="accordion-title accordion-1">
+							<p class="title ibmplexsans-semi-bold-hot-cinnamon-16px">
+								¿Qué hace diferente a Terres de una inmobiliaria tradicional?
+							</p>
+							<img class="chevron" src="/img/chevron-down.svg" alt="Chevron down" />
+						</div>
+					</article>
+					<article class="accordion-item accordion-1">
+						<div class="accordion-title accordion-1">
+							<div class="title ibmplexsans-semi-bold-hot-cinnamon-16px">¿Dónde opera Terres?</div>
+							<img class="chevron" src="/img/chevron-down.svg" alt="Chevron down" />
+						</div>
+					</article>
+					<article class="accordion-item accordion-1">
+						<div class="accordion-title accordion-1">
+							<p class="title ibmplexsans-semi-bold-hot-cinnamon-16px">¿Terres es un comprador de propiedades?</p>
+							<img class="chevron" src="/img/chevron-down.svg" alt="Chevron down" />
+						</div>
+					</article>
+					<article class="accordion-item accordion-1">
+						<div class="accordion-title accordion-1">
+							<p class="title ibmplexsans-semi-bold-hot-cinnamon-16px">¿Terres está habilitada cómo inmobiliaria?</p>
+							<img class="chevron" src="/img/chevron-down.svg" alt="Chevron down" />
+						</div>
+					</article>
+				</div>
+				<div class="button-3">
+					<div class="button valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px">Agendemos una cita</div>
+				</div>
+				<div class="overlap-group3"><img class="layer_1" src="/img/layer-1-11.svg" alt="Layer_1" /></div>
+				<div class="wf-footer">
+					<div class="tenes-preguntas-tomemos-un-cafe valign-text-middle ibmplexsans-medium-tango-36px">
+						¿Tenes preguntas?<br />Tomemos un cafe
+					</div>
+					<div class="button-5">
+						<div class="button valign-text-middle ibmplexsans-semi-bold-hot-cinnamon-16px">Agendemos una cita</div>
+					</div>
+					<img class="frame" src="/img/frame-48.svg" alt="Frame" />
+					<div class="footer-links ibmplexsans-normal-derby-16px">
+						<div class="label-1">Compra tu proximo terreno</div>
+						<div href="#" onclick="event.preventDefault(); showView('view-about11')" class="label pointer">Sobre nosotros</div>
+						<div class="label">Blog</div>
+						<div class="label">Contacto</div>
+					</div>
+					<img class="button-list" src="/img/button-list-4.svg" alt="Button List" />
+					<div class="copyright-2024-terres ibmplexsans-normal-fiery-orange-16px">Copyright 2024 - Terres®</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-center-horizontal">
+			<div class="about-2 screen">
+				<div class="top-nav">
+					<img class="line" src="/img/line-2.svg" alt="Line" />
+					<div class="nav-items">
+						<div class="menu-item-default"><div class="label-2 ibmplexsans-normal-brown-pod-16px">Comprar</div></div>
+						<div class="menu-item-default">
+							<div href="#"  class="label-2 ibmplexsans-medium-brown-pod-16px pointer">Sobre nosotros</div>
+						</div>
+						<div class="menu-item-default"><div class="label-2 ibmplexsans-normal-brown-pod-16px">Blog</div></div>
+						<div class="header-menu-default"><div class="label-2 ibmplexsans-normal-brown-pod-16px">FAQs</div></div>
+						<div class="header-menu-default"><div class="label-2 ibmplexsans-normal-brown-pod-16px">Contacto</div></div>
+						<div class="menu-item-default-1"></div>
+						<div class="menu-item-default-1"></div>
+						<div class="menu-item-default-1"></div>
+					</div>
+					<div class="right-items">
+						<a href="@Url.Action("Login", "Account")">
+							<article class="button-10">
+								<div class="button-6 valign-text-middle ibmplexsans-medium-hot-cinnamon-13px pointer">Ingresar</div>
+							</article>
+						</a><a href="@Url.Action("Register", "Account")">
+							<article class="button-11">
+								<div class="button-6 valign-text-middle ibmplexsans-medium-seashell-peach-13px">Crear cuenta</div>
+							</article>
+						</a>
+					</div>
+					<img onclick="redirect('/')" class="frame-1 pointer" src="/img/frame-55.svg" alt="Frame" />
+				</div>
+				<div class="overlap-group3-1">
+					<div class="overlap-group5">
+						<img class="base" src="/img/base-18.svg" alt="Base" />
+						<div class="overlap-group-1">
+							<img class="image-2-1" src="/img/image-2@2x.png" alt="image 2" />
+							<div class="founder-ceo-1 ibmplexsans-medium-hot-cinnamon-14px">Founder &amp; CEO</div>
+							<div class="nicols-zancare-1 ibmplexsans-medium-peanut-20px">Nicolás Zancare</div>
+							<div class="button-7">
+								<div class="button-8 valign-text-middle ibmplexsans-medium-hot-cinnamon-13px">Linkedin</div>
+							</div>
+						</div>
+						<div class="headline">
+							<h1 class="title-2 title ibmplexserif-semi-bold-peanut-60px">Expertos en tierras</h1>
+							<p class="somos-una-empresa-qu ibmplexsans-normal-brown-pod-20px">
+								<span class="ibmplexsans-normal-brown-pod-20px">Somos una empresa que se</span><span class="ibmplexsans-medium-brown-pod-20px"> dedica exclusivamente a comercializar terrenos.</span>
+							</p>
+							<p class="en-terres-los-vended ibmplexsans-normal-brown-pod-20px">
+								<span class="ibmplexsans-normal-brown-pod-20px">En</span><span class="ibmplexsans-medium-brown-pod-20px"> Terres </span><span class="ibmplexsans-normal-brown-pod-20px">
+									los vendedores pueden tener conocimiento real acerca de su propiedad y venderla a compradores
+									calificados que buscan lo que ellos ofrecen.
+								</span>
+							</p>
+							<div class="button-12">
+								<div class="button-9 valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px">
+									Agendemos una cita
+								</div>
+							</div>
+						</div>
+						<img class="frame-2" src="/img/frame-72.svg" alt="Frame" />
+						<div class="overlap-group1">
+							<img class="image-3 image" src="/img/image@2x.png" alt="image" />
+							<div class="founder-ceo-1 ibmplexsans-medium-hot-cinnamon-14px">Founder &amp; CEO</div>
+							<div class="federico-akerman-1 ibmplexsans-medium-peanut-20px">Federico Akerman</div>
+							<div class="button-7">
+								<div class="button-8 valign-text-middle ibmplexsans-medium-hot-cinnamon-13px">Linkedin</div>
+							</div>
+						</div>
+						<div class="overlap-group2">
+							<div class="image-4 image"></div>
+							<div class="titulo-1 ibmplexsans-medium-hot-cinnamon-14px">Titulo</div>
+							<div class="nombre-y-apellido-1 ibmplexsans-medium-peanut-20px">Nombre y apellido</div>
+							<div class="button-7">
+								<div class="button-8 valign-text-middle ibmplexsans-medium-hot-cinnamon-13px">Linkedin</div>
+							</div>
+						</div>
+					</div>
+					<div class="concenos-1 ibmplexserif-medium-peanut-43px">Conócenos</div>
+				</div>
+				<div class="button-13">
+					<div class="button-9 valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px">Agendemos una cita</div>
+				</div>
+				<div class="frame-1171275541">
+					<div class="text">
+						<div class="quizs-te-preguntes-1 ibmplexserif-medium-peanut-43px">Quizás te preguntes</div>
+					</div>
+				</div>
+				<div class="accordion-1">
+					<article class="accordion-item-3 accordion-item">
+						<div class="accordion-title-3 accordion-title">
+							<div class="title-1 title ibmplexsans-medium-hot-cinnamon-20px">¿Qué es Terres?</div>
+							<img class="chevron-1" src="/img/chevron-up.svg" alt="Chevron up" />
+						</div>
+						<div class="accordion-content-1">
+							<p class="body-1 valign-text-middle">
+								Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.
+							</p>
+						</div>
+					</article>
+					<article class="accordion-item-2 accordion-item">
+						<div class="accordion-title-2 accordion-title">
+							<p class="title-1 title ibmplexsans-medium-hot-cinnamon-20px">
+								¿Qué hace diferente a Terres de una inmobiliaria tradicional?
+							</p>
+							<img class="chevron-1" src="/img/chevron-down.svg" alt="Chevron down" />
+						</div>
+					</article>
+					<article class="accordion-item-2 accordion-item">
+						<div class="accordion-title-2 accordion-title">
+							<div class="title-1 title ibmplexsans-medium-hot-cinnamon-20px">¿Dónde opera Terres?</div>
+							<img class="chevron-1" src="/img/chevron-down.svg" alt="Chevron down" />
+						</div>
+					</article>
+					<article class="accordion-item-2 accordion-item">
+						<div class="accordion-title-2 accordion-title">
+							<p class="title-1 title ibmplexsans-medium-hot-cinnamon-20px">¿Terres es un comprador de propiedades?</p>
+							<img class="chevron-1" src="/img/chevron-down.svg" alt="Chevron down" />
+						</div>
+					</article>
+					<article class="accordion-item-2 accordion-item">
+						<div class="accordion-title-2 accordion-title">
+							<p class="title-1 title ibmplexsans-medium-hot-cinnamon-20px">
+								¿Terres está habilitada cómo inmobiliaria?
+							</p>
+							<img class="chevron-1" src="/img/chevron-down.svg" alt="Chevron down" />
+						</div>
+					</article>
+				</div>
+				<div class="button-14">
+					<div class="button-9 valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px">Agendemos una cita</div>
+				</div>
+				<div class="overlap-group4">
+					<div class="group-36701">
+						<div class="headline-1 headline-3">
+							<div class="portal-terres">Portal Terres</div>
+							<div class="headline-2 headline-3">
+								<div class="paragraph ibmplexsans-medium-brown-pod-38px">¿Querés recibir más info?</div>
+								<p class="te-vamos-a-enviar-op ibmplexsans-medium-peanut-20px">
+									Te vamos a enviar oportunidades para que aproveches.
+								</p>
+							</div>
+						</div>
+						<p class="mas-de-100-lotes-so ibmplexsans-medium-white-14px">
+							<span class="ibmplexsans-medium-peanut-14px">Mas de </span><span class="ibmplexsans-medium-tango-14px">100+</span><span class="ibmplexsans-medium-peanut-14px"> lotes son cargados diariamente en nuestro portal</span>
+						</p>
+					</div>
+					<div class="frame-868">
+						<div class="ejemplogmailcom">ejemplo@gmail.com</div>
+						<div class="button-15">
+							<div class="button-6 valign-text-middle ibmplexsans-medium-seashell-peach-13px">Suscribirme</div>
+						</div>
+					</div>
+				</div>
+				<img class="footer" src="/img/footer-1.png" alt="Footer" />
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+	<script src="/js/redirect.js"></script>
+
+</body>
+</html>

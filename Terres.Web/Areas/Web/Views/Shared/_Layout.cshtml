@@ -1,0 +1,46 @@
+﻿@using System.Security.Claims;
+@{
+
+    ViewData["Title"] = "Terres";
+}
+<!DOCTYPE html>
+
+<html
+  lang="es"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../../assets/"
+  data-template="horizontal-menu-template"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0" />
+
+    <title>@ViewData["Title"].ToString()</title>
+
+
+
+  </head>
+
+  <body>
+            @Html.Partial("_Footer.cshtml")
+
+            @Html.Partial("_Header.cshtml")
+            @Html.Partial("_Sidebar.cshtml")
+
+            @RenderBody()
+
+
+
+    @section Scripts {
+
+    }
+    @RenderSection("Scripts", required: false)
+
+    
+  </body>
+</html>
+
+       

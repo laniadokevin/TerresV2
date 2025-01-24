@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Upload CSV";
+}
+
+<h2>Upload CSV</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label for="file">Select CSV file:</label>
+        <input type="file" id="file" name="file" accept=".csv" />
+    </div>
+    <button type="submit">Upload</button>
+</form>
+
+@if (TempData["Error"] != null)
+{
+    <div style="color:red;">
+        <p>@TempData["Error"]</p>
+    </div>
+}
+
+@if (TempData["Success"] != null)
+{
+    <div style="color:green;">
+        <p>@TempData["Success"]</p>
+    </div>
+}

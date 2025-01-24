@@ -1,0 +1,851 @@
+/* screen - dashboard-onboarding */
+
+.dashboard-onboarding {
+  align-items: flex-start;
+  background-color: var(--basewhite);
+  display: flex;
+  height: 1024px;
+  overflow: hidden;
+  width: 1440px;
+}
+
+.dashboard-onboarding .overlap-group2 {
+  height: 1026px;
+  position: relative;
+  width: 1440px;
+}
+
+.dashboard-onboarding .base {
+  height: 1024px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.dashboard-onboarding .frame-1171275429 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 104px;
+  left: 868px;
+  position: absolute;
+  top: 300px;
+  width: 171px;
+}
+
+.dashboard-onboarding .plus {
+  height: 52px;
+  margin-left: 60px;
+  width: 52px;
+}
+
+.dashboard-onboarding .x2424 {
+  color: var(--tango);
+  font-family: var(--font-family-ibm_plex_sans);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  height: 32px;
+  letter-spacing: 0;
+  line-height: 32.0px;
+  margin-left: 16px;
+  white-space: nowrap;
+  width: 140px;
+}
+
+.dashboard-onboarding .frame-1171275428 {
+  align-items: flex-start;
+  background-color: var(--derby);
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  min-height: 1026px;
+  padding: 62px 46px;
+  position: absolute;
+  top: 0;
+  width: 345px;
+}
+
+.dashboard-onboarding .frame {
+  height: 28px;
+  margin-left: 5px;
+  width: 117px;
+}
+
+.dashboard-onboarding .x01 {
+  align-items: center;
+  background-color: var(--tango);
+  border-radius: 16px;
+  box-shadow: 0px 20px 50px #3745571a;
+  display: flex;
+  gap: 24px;
+  height: 64px;
+  margin-top: 65px;
+  padding: 16px 24px;
+  position: relative;
+  width: 252px;
+}
+
+.dashboard-onboarding .icon-home {
+  height: 31.76px;
+  position: relative;
+  width: 32px;
+}
+
+.dashboard-onboarding .text {
+  color: var(--seashell-peach);
+  font-family: var(--font-family-ibm_plex_sans);
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}
+
+.dashboard-onboarding .flex-row {
+  align-items: center;
+  display: flex;
+  gap: 24px;
+  margin-left: 24px;
+  margin-top: 40px;
+  min-width: 102px;
+}
+
+.dashboard-onboarding .icon-user {
+  height: 32px;
+  width: 32px;
+}
+
+.dashboard-onboarding .group-1000002714 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.0px;
+  width: 46px;
+}
+
+.dashboard-onboarding .text-1 {
+  height: 23px;
+  margin-left: -2px;
+  width: 44px;
+}
+
+.dashboard-onboarding .group-1000002718 {
+  align-items: flex-start;
+  display: flex;
+  gap: 27px;
+  margin-left: 21px;
+  margin-top: 50px;
+  min-width: 139px;
+}
+
+.dashboard-onboarding .mdimessage-processing-outline {
+  display: flex;
+  height: 32px;
+  width: 32px;
+}
+
+.dashboard-onboarding .group-36700 {
+  align-items: flex-start;
+  display: flex;
+  min-width: 32px;
+}
+
+.dashboard-onboarding .overlap-group {
+  height: 30px;
+  position: relative;
+  width: 32px;
+}
+
+.dashboard-onboarding .icon-message-circle {
+  height: 28px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 27px;
+}
+
+.dashboard-onboarding .badge {
+  align-items: center;
+  background-color: var(--terres-themesyslighterror);
+  border-radius: 100px;
+  display: flex;
+  height: 18px;
+  justify-content: center;
+  left: 14px;
+  max-width: 34px;
+  overflow: hidden;
+  padding: 0px 4px;
+  position: absolute;
+  top: 0;
+  width: 18px;
+}
+
+.dashboard-onboarding .badge-label {
+  color: #00000033;
+  flex: 1;
+  font-family: var(--font-family-ibm_plex_sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.50px;
+  line-height: 16px;
+  position: relative;
+  text-align: center;
+}
+
+.dashboard-onboarding .text-2 {
+  margin-top: 2px;
+  min-height: 23px;
+}
+
+.dashboard-onboarding .group-1000002720 {
+  display: flex;
+  gap: 24.2px;
+  height: 32px;
+  margin-left: 23.67px;
+  margin-top: 530px;
+  width: 96px;
+}
+
+.dashboard-onboarding .sign-out-icon {
+  display: flex;
+  height: 32.33px;
+  margin-left: 0.2px;
+  margin-top: -0.2px;
+  transform: rotate(90.00deg);
+  width: 32px;
+}
+
+.dashboard-onboarding .group-923 {
+  display: flex;
+  height: 26.67px;
+  margin-left: 2.7px;
+  margin-top: 5.7px;
+  width: 26.67px;
+}
+
+.dashboard-onboarding .union {
+  height: 21.33px;
+  margin-left: 2.7px;
+  margin-top: 2.7px;
+  transform: rotate(-90.00deg);
+  width: 21.33px;
+}
+
+.dashboard-onboarding .salir {
+  height: 23px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 3.0px;
+  width: 38px;
+}
+
+.dashboard-onboarding .header {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  height: 79px;
+  left: 386px;
+  position: absolute;
+  top: 54px;
+  width: 191px;
+}
+
+.dashboard-onboarding .x4xl {
+  height: 40px;
+  letter-spacing: -0.38px;
+  line-height: 40.3px;
+  white-space: nowrap;
+  width: 187px;
+}
+
+.dashboard-onboarding .paragraph {
+  color: var(--peanut);
+  font-family: var(--font-family-ibm_plex_sans);
+  font-size: 12px;
+  font-weight: 400;
+  height: 18px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 2px;
+  white-space: nowrap;
+  width: 93px;
+}
+
+.dashboard-onboarding .icons {
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.dashboard-onboarding .search {
+  letter-spacing: 0;
+  line-height: 24px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.dashboard-onboarding .icons-1 {
+  height: 46px;
+  position: relative;
+  width: 46px;
+}
+
+.dashboard-onboarding .tag {
+  align-items: center;
+  background-color: var(--hot-cinnamon);
+  border-radius: 32px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 0px 10px;
+  position: relative;
+}
+
+.dashboard-onboarding .overlap-group1 {
+  align-items: flex-start;
+  background-color: var(--derby);
+  border-radius: 35px;
+  box-shadow: 0px 2px 3px #00000008;
+  display: flex;
+  flex-direction: column;
+  left: 388px;
+  min-height: 299px;
+  padding: 31px 23px;
+  position: absolute;
+  top: 203px;
+  width: 357px;
+}
+
+.dashboard-onboarding .flex-row-1 {
+  align-items: center;
+  display: flex;
+  gap: 11px;
+  margin-left: 4px;
+  min-width: 117px;
+}
+
+.dashboard-onboarding .title {
+  align-self: center;
+  height: 82px;
+  letter-spacing: 0;
+  line-height: 47px;
+  margin-left: 2.16px;
+  margin-top: 35px;
+  width: 305px;
+}
+
+.dashboard-onboarding .button-1 {
+  align-items: center;
+  background-color: var(--tango);
+  border-radius: 32px;
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  justify-content: center;
+  padding: 12px 16px;
+  position: relative;
+  width: 150px;
+}
+
+.dashboard-onboarding .button {
+  letter-spacing: 0.10px;
+  line-height: 16px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.dashboard-onboarding .button-2 {
+  align-items: center;
+  background-color: var(--seashell-peach);
+  border: 1px solid;
+  border-color: var(--macaroni-and-cheese);
+  border-radius: 32px;
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  justify-content: center;
+  padding: 12px 16px;
+  position: relative;
+  width: 150px;
+}
+
+.dashboard-onboarding .group-36742 {
+  border: 1px dashed;
+  border-color: var(--tango);
+  border-radius: 35px;
+  box-shadow: 0px 2px 3px #00000008;
+  height: 299px;
+  left: 775px;
+  position: absolute;
+  top: 203px;
+  width: 357px;
+}
+
+.dashboard-onboarding .button-3 {
+  align-items: center;
+  background-color: var(--tango);
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+  height: 56px;
+  justify-content: center;
+  left: 388px;
+  padding: 16px 24px;
+  position: absolute;
+  top: 569px;
+  width: 359px;
+}
+
+.dashboard-onboarding .button-4 {
+  letter-spacing: 0.50px;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.dashboard-onboarding .group-1000002753 {
+  display: flex;
+  gap: 23px;
+  height: 80px;
+  left: 1021px;
+  position: absolute;
+  top: 853px;
+  width: 336px;
+}
+
+.dashboard-onboarding .group-1000002752 {
+  background-color: var(--tango);
+  border-radius: 40px;
+  box-shadow: 0px 4px 8px #0000001a;
+  display: flex;
+  height: 80px;
+  width: 80px;
+}
+
+.dashboard-onboarding .solid-communication-phone {
+  height: 47.62px;
+  margin-left: 16.2px;
+  margin-top: 16.2px;
+  width: 47.62px;
+}
+
+.dashboard-onboarding .span {
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.dashboard-onboarding .text-3 {
+  letter-spacing: 0;
+  line-height: normal;
+}
+/* screen - onboarding-dashboard-all-breakpoints */
+
+.onboarding-dashboard-all-breakpoints {
+  background-color: var(--seashell-peach);
+  display: flex;
+  flex-direction: column;
+  min-height: 844px;
+  min-width: 393px;
+  width: 100%;
+}
+
+.onboarding-dashboard-all-breakpoints .top-app-bar {
+  align-items: center;
+  background-color: var(--derby);
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  margin-top: 56px;
+  padding: 8px 22px;
+  position: relative;
+  width: 393px;
+}
+
+.onboarding-dashboard-all-breakpoints .frame-1 {
+  height: 25px;
+  position: relative;
+  width: 104px;
+}
+
+.onboarding-dashboard-all-breakpoints .leading-icon {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 48px;
+  justify-content: center;
+  position: relative;
+  width: 48px;
+}
+
+.onboarding-dashboard-all-breakpoints .container {
+  align-items: center;
+  background-color: var(--tango);
+  border-radius: 100px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.onboarding-dashboard-all-breakpoints .state-layer-1 {
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  padding: 8px;
+}
+
+.onboarding-dashboard-all-breakpoints .icon {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.onboarding-dashboard-all-breakpoints .group-36741 {
+  height: 299px;
+  margin-left: 16px;
+  margin-top: 31px;
+  min-width: 361px;
+}
+
+.onboarding-dashboard-all-breakpoints .overlap-group2-1 {
+  align-items: flex-start;
+  background-color: var(--derby);
+  border-radius: 35px;
+  box-shadow: 0px 2px 3px #00000008;
+  display: flex;
+  flex-direction: column;
+  min-height: 299px;
+  padding: 31px 23px;
+  width: 357px;
+}
+
+.onboarding-dashboard-all-breakpoints .flex-row-2 {
+  align-items: center;
+  display: flex;
+  gap: 11px;
+  margin-left: 4px;
+  min-width: 117px;
+}
+
+.onboarding-dashboard-all-breakpoints .alert-octagon-1 {
+  height: 16px;
+  width: 16px;
+}
+
+.onboarding-dashboard-all-breakpoints .no-autorizado-1 {
+  height: 24px;
+  letter-spacing: 0.10px;
+  line-height: 20px;
+  white-space: nowrap;
+  width: 90px;
+}
+
+.onboarding-dashboard-all-breakpoints .title-1 {
+  align-self: center;
+  height: 82px;
+  letter-spacing: 0;
+  line-height: 47px;
+  margin-left: 2.16px;
+  margin-top: 35px;
+  width: 305px;
+}
+
+.onboarding-dashboard-all-breakpoints .button-container-1 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  gap: 7px;
+  margin-top: 52px;
+  min-width: 307px;
+}
+
+.onboarding-dashboard-all-breakpoints .button-6 {
+  align-items: center;
+  background-color: var(--tango);
+  border-radius: 32px;
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  justify-content: center;
+  padding: 12px 16px;
+  position: relative;
+  width: 150px;
+}
+
+.onboarding-dashboard-all-breakpoints .button-5 {
+  letter-spacing: 0.10px;
+  line-height: 20px;
+  margin-bottom: -1.00px;
+  margin-top: -3.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.onboarding-dashboard-all-breakpoints .button-7 {
+  align-items: center;
+  background-color: var(--seashell-peach);
+  border: 1px solid;
+  border-color: var(--macaroni-and-cheese);
+  border-radius: 32px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  justify-content: center;
+  padding: 12px 16px;
+  position: relative;
+  width: 150px;
+}
+
+.onboarding-dashboard-all-breakpoints .snackbar {
+  align-items: flex-start;
+  border-radius: 16px;
+  display: flex;
+  height: 112px;
+  margin-left: 21px;
+  margin-top: 39px;
+  position: relative;
+  width: 353px;
+}
+
+.onboarding-dashboard-all-breakpoints .snackbar-1 {
+  align-items: flex-start;
+  background-color: var(--derby);
+  border-radius: 16px;
+  box-shadow: 0px 1px 3px #0000004c;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 112px;
+  position: relative;
+  width: 344px;
+}
+
+.onboarding-dashboard-all-breakpoints .content {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 10px;
+  padding: 14px 16px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.onboarding-dashboard-all-breakpoints .supporting-text {
+  flex: 1;
+  height: 40px;
+  letter-spacing: 0.50px;
+  line-height: 16px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.onboarding-dashboard-all-breakpoints .span0-1 {
+  letter-spacing: 0.08px;
+  line-height: 24px;
+}
+
+.onboarding-dashboard-all-breakpoints .span1 {
+  color: var(--peanut);
+  font-family: var(--font-family-ibm_plex_sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06px;
+}
+
+.onboarding-dashboard-all-breakpoints .action {
+  align-items: flex-end;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-end;
+  padding: 0px 8px 4px;
+  position: relative;
+  width: 100%;
+}
+
+.onboarding-dashboard-all-breakpoints .inverse-button {
+  align-items: center;
+  border-radius: 100px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.onboarding-dashboard-all-breakpoints .state-layer-2 {
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 10px 12px;
+}
+
+.onboarding-dashboard-all-breakpoints .label-text-1 {
+  color: var(--tango);
+  font-family: var(--font-family-ibm_plex_sans);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  letter-spacing: 0.10px;
+  line-height: 20px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.onboarding-dashboard-all-breakpoints .frame-1171275531 {
+  align-self: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 82px;
+  margin-left: 1px;
+  margin-top: 36px;
+  width: 142px;
+}
+
+.onboarding-dashboard-all-breakpoints .plus-1 {
+  height: 48px;
+  margin-left: 47px;
+  width: 48px;
+}
+
+.onboarding-dashboard-all-breakpoints .x2424-1 {
+  height: 20px;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.onboarding-dashboard-all-breakpoints .group-24 {
+  margin-top: 42px;
+  min-width: 393px;
+}
+
+.onboarding-dashboard-all-breakpoints .overlap-group1-1 {
+  height: 83px;
+  position: relative;
+  width: 393px;
+}
+
+.onboarding-dashboard-all-breakpoints .navigation-bar {
+  align-items: flex-start;
+  background-color: var(--derby);
+  display: flex;
+  gap: 8px;
+  left: 0;
+  padding: 0px 8px;
+  position: absolute;
+  top: 0;
+  width: 393px;
+}
+
+.onboarding-dashboard-all-breakpoints .icon-container-1 {
+  align-items: center;
+  background-color: var(--macaroni-and-cheese);
+  border-radius: 16px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.onboarding-dashboard-all-breakpoints .state-layer-3 {
+  display: flex;
+  height: 32px;
+  padding: 4px 20px;
+  width: 64px;
+}
+
+.onboarding-dashboard-all-breakpoints .label-text {
+  align-self: stretch;
+  letter-spacing: 0.25px;
+  line-height: 19px;
+  position: relative;
+  text-align: center;
+}
+
+.onboarding-dashboard-all-breakpoints .state-layer {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 32px;
+  justify-content: center;
+  margin-left: -16.00px;
+  margin-right: -16.00px;
+  padding: 4px 20px;
+  position: relative;
+  width: 64px;
+}
+
+.onboarding-dashboard-all-breakpoints .icon-user-1 {
+  cursor: pointer;
+  height: 24px;
+  left: 312px;
+  position: absolute;
+  top: 16px;
+  width: 24px;
+}
+
+.onboarding-dashboard-all-breakpoints .overlap-group-1 {
+  height: 26px;
+  left: 182px;
+  position: absolute;
+  top: 14px;
+  width: 29px;
+}
+
+.onboarding-dashboard-all-breakpoints .badge-1 {
+  align-items: center;
+  background-color: var(--terres-themesyslighterror);
+  border-radius: 100px;
+  display: inline-flex;
+  justify-content: center;
+  left: 13px;
+  max-width: 34px;
+  min-width: 16px;
+  overflow: hidden;
+  padding: 0px 4px;
+  position: absolute;
+  top: 0;
+}
+
+.onboarding-dashboard-all-breakpoints .group {
+  align-items: flex-start;
+  display: flex;
+}
+@media screen and (max-width: 1439px) {
+  .screen.dashboard-onboarding { 
+    display: none;
+   }
+}
+@media screen and (min-width: 1440px) {
+  .screen.onboarding-dashboard-all-breakpoints { 
+    display: none;
+   }
+}

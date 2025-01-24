@@ -1,0 +1,782 @@
+﻿@using Terres.Web.Models.OLD
+
+@{
+	Layout = null;
+	
+}
+@model AccountViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+	<meta name="og:type" content="website" />
+	<meta name="twitter:card" content="photo" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-001-variante-direccion-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-001-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-002-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-003-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-004-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/pre-loading-1u472-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/pre-loading-2u472-all-breakpoints.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/styleguide.css" />
+	<link rel="stylesheet" type="text/css" href="/css/globals.css" />
+	<link rel="stylesheet" type="text/css" href="/css/wizLote.css" />
+</head>
+<body>
+	<input type="hidden" id="anPageName" name="page" value="home-v-1" />
+	<input type="hidden" id="smp" />
+	<input type="hidden" id="TipoCreacion" value="Nada" />
+	<input type="hidden" id="isLoggedin" value="@Model.isLogged.ToString()" />
+
+	<!-- Contenedor del Loading -->
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+    </div>
+
+	<!-- PAGINA FORM 1: Mi direccion -->
+	<div id="view-form1" class="view">
+		<div class="container-center-horizontal">
+			<div class="form-001-bis screen">
+				<div class="top-app-bar">
+					<img class="frame" src="/img/frame-23@2x.png" alt="Frame" />
+					<div class="leading-icon">
+						<div class="container">
+							<div class="state-layer"><img class="icon" src="/img/icon-86@2x.png" alt="Icon" /></div>
+						</div>
+					</div>
+				</div>
+				<img class="linear-determinate" src="/img/linear-determinate-13@2x.png" alt="linear-determinate" />
+				<div class="overlap-group1 overlap">
+					<h1 class="mi-direccin-es valign-text-middle ibmplexserif-medium-peanut-43px">Mi dirección es:</h1>
+					<div class="frame-1">
+						<div class="text-field-filled-enabled">
+							<div class="overlap-group overlap">
+								<div class="input-field">
+									<div class="autocomplete-container">
+										<input placeholder="Dirección" list="sugerencias-direcciones" onkeyup="normalizar()" id="mi-direccion-mobile" type="text" class="label valign-text-bottom ibmplexsans-medium-tango-14px evit-background direccion-input"></input>
+										<!--<input type="text" placeholder="Buscar dirección..." class="styled-input" id="autocomplete-input">-->
+										<ul class="autocomplete-list" id="autocomplete-list">
+											
+										</ul>
+									</div>
+
+								</div>
+
+								<img class="icon-1" src="/img/icon-89@2x.png" alt="Icon" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="button button-2" name="263_5526" type="button" onclick="validarDireccion('mi-direccion-mobile','view-form2')">
+					Continuar
+				</button>
+
+				<div class="frame-1171275450">
+					<img class="solid-communication-phone"
+						 src="/img/solid-communication-phone-12@2x.png"
+						 alt="Solid/Communication/Phone" />
+				</div>
+			</div>
+		</div>
+		<div class="container-center-horizontal">
+			<div class="formulario-001-variante-direccion-all-breakpoints screen">
+				<div class="overlap-group1-1">
+					<div class="background-variant4">
+						<h1 class="de-bustamante-2520-soy ibmplexserif-semi-bold-peanut-60px">Mi dirección es:</h1>
+					</div>
+					<img class="linear-determinate-1" src="/img/linear-determinate-14.png" alt="linear-determinate" />
+					<div class="frame-1171275427">
+						<div class="frame-1-1">
+							<div class="text-field-filled-enabled-1">
+								<div class="overlap-group-1">
+									<div class="input-field-1">
+										<div class="autocomplete-container">
+										<input class="pepe-botella ibmplexsans-medium-hot-cinnamon-22px direccion-input"
+											   name="pepebotella"
+											   id="mi-direccion-desktop"
+											   onkeyup="normalizar()"
+											   placeholder="Sanchez de Bustamante 2520"
+											   type="text"
+											   required />
+
+											<!--<input type="text" placeholder="Buscar dirección..." class="styled-input" id="autocomplete-input">-->
+											<ul class="autocomplete-list" id="autocomplete-listDtp">
+											</ul>
+										</div>
+
+
+									</div>
+									<img class="icon-2" src="/img/icon-90@2x.png" alt="Icon" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" onclick="event.preventDefault(); validarDireccion('mi-direccion-desktop','view-form2')">
+						<div class="button-3">
+							<div class="button-2 valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px">Continuar</div>
+						</div>
+					</a>
+					<div class="button-4" onclick="redirect('/')">
+						<div class="valign-text-middle ibmplexsans-semi-bold-hot-cinnamon-16px">Volver</div>
+					</div>
+					<div class="group-1000002753 group">
+						<div class="group-1000002752 group">
+							<img class="solid-communication-phone-1"
+								 src="/img/solid-communication-phone-11@2x.png"
+								 alt="Solid/Communication/Phone" />
+						</div>
+						<p class="necesitas-ayuda-esc ibmplexsans-medium-white-18px">
+							<span class="span0 ibmplexsans-medium-brown-pod-18px">Necesitas ayuda? <br /></span><span class="span ibmplexsans-normal-brown-pod-16px">Escribinos al </span><span class="span ibmplexsans-normal-tango-16px">+54 9 11 5039609</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- PAGINA FORM 2: Tipo de dueño -->
+	<div id="view-form2" class="view">
+		<div class="container-center-horizontal">
+			<div class="formulario-001-all-breakpoints screen">
+				<div class="overlap-group">
+					<div class="background-variant4">
+						<h1 class="title ibmplexserif-semi-bold-peanut-60px" id="direccDinamic"></h1>
+					</div>
+					<a href="#" onclick="validarYContinuar('mi-direccion-desktop','view-form3')">
+						<div class="button">
+							<div class="button-1 valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px">Continuar</div>
+						</div>
+					</a>
+					@foreach (var tipoLote in Model.TipoLotes)
+					{
+						//Harcode los id (traerlos dinamicamente)
+						@if (tipoLote.Id == 1)
+						{
+							<div class="frame-1171275424">
+								<img class="frame-1171275423" src="/img/frame-1171275423-1@2x.png" />
+								<div class="dueo-directo ibmplexsans-medium-brown-pod-22px">Dueño directo</div>
+							</div>
+						}
+						else if (tipoLote.Id == 2)
+						{
+							<div class="frame-1171275425">
+								<img class="frame-1171275423"></img>
+								<div class="uno-de-varios-dueos ibmplexsans-medium-brown-pod-22px">Uno de varios dueños</div>
+							</div>
+						}
+						else
+						{
+							<div class="frame-1171275426">
+								<img class="frame-1171275423"></img>
+								<div class="agente-inmobiliario ibmplexsans-medium-brown-pod-22px">Agente inmobiliario</div>
+							</div>
+						}
+					}
+
+					<img class="linear-determinate" src="/img/linear-determinate-14.png" alt="linear-determinate" />
+					<div class="group-1000002753 group">
+						<div class="group-1000002752 group">
+							<img class="solid-communication-phone"
+								 src="/img/solid-communication-phone-15@2x.png"
+								 alt="Solid/Communication/Phone" />
+						</div>
+						<p class="necesitas-ayuda-esc ibmplexsans-medium-white-18px">
+							<span class="span0 ibmplexsans-medium-brown-pod-18px">Necesitas ayuda? <br /></span><span class="span ibmplexsans-normal-brown-pod-16px">Escribinos al </span><span class="span ibmplexsans-normal-tango-16px">+54 9 11 5039609</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- action="form6" method="post" -->
+		<div></div>
+		<form class="form-001-2 screen" name="form6" onsubmit="redirectToForm(event,'view-form3')">
+			<div class="top-app-bar">
+				<img class="frame" src="/img/frame-23@2x.png" alt="Frame" />
+				<div class="leading-icon">
+					<div class="container-1 container-3">
+						<div class="state-layer-2"><img class="icon" src="/img/icon-86@2x.png" alt="Icon" /></div>
+					</div>
+				</div>
+			</div>
+			<img class="linear-determinate-1" src="/img/linear-determinate-13@2x.png" alt="linear-determinate" />
+			<h1 class="title-1 valign-text-middle ibmplexserif-medium-peanut-43px" id="direccDinamic2"></h1>
+			<div class="list-4-density">
+				@foreach (var tipoLote in Model.TipoLotes)
+				{
+					if (tipoLote.Id == 1)
+					{
+						<article class="list-item">
+							<div class="state-layer-overlay"></div>
+							<div class="state-layer">
+								<div class="content">
+									<div class="headline valign-text-middle ibmplexsans-semi-bold-peanut-16px">Dueño directo</div>
+								</div>
+								<div class="trailing-element">
+									<div class="checkboxes">
+										<div class="state-layer-1">
+											<div class="container-2 container-3"></div>
+											<img class="iconscheck_small" src="/img/icons-check-small-1@2x.png" alt="Icons/check_small" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="horizontalfull-width"><img class="divider" src="/img/divider-4@2x.png" alt="Divider" /></div>
+						</article>
+					}
+					else if (tipoLote.Id == 2)
+					{
+						<article class="list-item">
+							<div class="state-layer-overlay"></div>
+							<div class="state-layer">
+								<div class="content">
+									<div class="headline valign-text-middle ibmplexsans-semi-bold-peanut-16px">Uno de varios dueños</div>
+								</div>
+								<div class="trailing-element">
+									<div class="checkboxes">
+										<div class="state-layer-1">
+											<div class="container"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="divider-1"><img class="divider" src="/img/divider-4@2x.png" alt="Divider" /></div>
+						</article>
+					}
+					else
+					{
+						<article class="list-item">
+							<div class="state-layer-overlay"></div>
+							<div class="state-layer">
+								<div class="content">
+									<div class="headline valign-text-middle ibmplexsans-semi-bold-peanut-16px">Agente inmobiliario</div>
+								</div>
+								<div class="trailing-element">
+									<div class="checkboxes">
+										<div class="state-layer-1">
+											<div class="container"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="horizontalfull-width-1"><img class="divider" src="/img/divider-4@2x.png" alt="Divider" /></div>
+						</article>
+					}
+
+				}
+
+			</div>
+			<!-- javascript:SubmitForm('form6') -->
+			<a href="#" onclick="validarYContinuar('mi-direccion-mobile','view-form3')">
+				<button class="button-2" name="9_14842" type="text">Continuar</button>
+			</a>
+			<div class="frame-1171275450">
+				<img class="solid-communication-phone-1"
+					 src="/img/solid-communication-phone-12@2x.png"
+					 alt="Solid/Communication/Phone" />
+			</div>
+		</form>
+	</div>
+
+	<!-- PAGINA FORM 3: Mi nombre -->
+	<div id="view-form3" class="view">
+		<div class="container-center-horizontal">
+			<div class="form-002 screen">
+				<div class="top-app-bar">
+					<img class="frame" src="/img/frame-23@2x.png" alt="Frame" />
+					<div class="leading-icon">
+						<div class="container">
+							<div class="state-layer"><img class="icon" src="/img/icon-86@2x.png" alt="Icon" /></div>
+						</div>
+					</div>
+				</div>
+				<img class="linear-determinate" src="/img/linear-determinate-18@2x.png" alt="linear-determinate" />
+				<div class="overlap-group1 overlap">
+					<h1 class="title valign-text-middle ibmplexserif-medium-peanut-43px">Mi nombre es:</h1>
+					<div class="frame-1">
+						<div class="text-field-filled-enabled">
+							<div class="overlap-group overlap">
+								<div class="input-field">
+									<input type="text" id="pepe-botella-mobile" placeholder="Pepe Botella" class="label valign-text-bottom ibmplexsans-medium-tango-14px evit-background nombre-input"></input>
+								</div>
+								<img class="icon-1" src="/img/icon-104@2x.png" alt="Icon" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" onclick="event.preventDefault(); validarYContinuar('pepe-botella-mobile','view-form4')">
+					<button class="button button-2" name="9_16181">Continuar</button>
+				</a>
+				<div class="frame-1171275450">
+					<img class="solid-communication-phone"
+						 src="/img/solid-communication-phone-12@2x.png"
+						 alt="Solid/Communication/Phone" />
+				</div>
+			</div>
+		</div>
+		<div class="container-center-horizontal">
+			<div class="formulario-002-all-breakpoints screen">
+				<div class="overlap-group1-1">
+					<div class="background-variant4">
+						<h1 class="de-bustamante-2520-soy ibmplexserif-semi-bold-peanut-60px">Mi nombre es:</h1>
+					</div>
+					<a href="#" onclick="event.preventDefault(); validarYContinuar('pepe-botella-desktop','view-form4');">
+						<div class="button-3">
+							<div class="button-2 valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px">Continuar</div>
+						</div>
+					</a><a href="#" onclick="event.preventDefault(); showView('view-form2')">
+						<div class="button-4">
+							<div class="valign-text-middle ibmplexsans-semi-bold-hot-cinnamon-16px">Volver</div>
+						</div>
+					</a><img class="linear-determinate-1" src="/img/linear-determinate-19.png" alt="linear-determinate" />
+					<div class="frame-1171275427">
+						<div class="frame-1-1">
+							<div class="text-field-filled-enabled-1">
+								<div class="overlap-group-1">
+									<div class="input-field-1">
+										<input type="text" id="pepe-botella-desktop" placeholder="Pepe Botella" class="pepe-botella valign-text-middle ibmplexsans-medium-hot-cinnamon-22px evit-background nombre-input"></input>
+									</div>
+									<img class="icon-2" src="/img/icon-105@2x.png" alt="Icon" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="group-1000002753 group">
+						<div class="group-1000002752 group">
+							<img class="solid-communication-phone-1"
+								 src="/img/solid-communication-phone-15@2x.png"
+								 alt="Solid/Communication/Phone" />
+						</div>
+						<p class="necesitas-ayuda-esc ibmplexsans-medium-white-18px">
+							<span class="span0 ibmplexsans-medium-brown-pod-18px">Necesitas ayuda? <br /></span><span class="span ibmplexsans-normal-brown-pod-16px">Escribinos al </span><span class="span ibmplexsans-normal-tango-16px">+54 9 11 5039609</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- PAGINA FORM 4: Mi telefono -->
+	<div id="view-form4" class="view">
+		<div class="container-center-horizontal">
+			<div class="form-003 screen">
+				<div class="top-app-bar">
+					<img class="frame" src="/img/frame-23@2x.png" alt="Frame" />
+					<div class="leading-icon">
+						<div class="container">
+							<div class="state-layer"><img class="icon" src="/img/icon-86@2x.png" alt="Icon" /></div>
+						</div>
+					</div>
+				</div>
+				<img class="linear-determinate" src="/img/linear-determinate-22@2x.png" alt="linear-determinate" />
+				<div class="overlap-group1 overlap">
+					<h1 class="mi-telfono-es valign-text-middle ibmplexserif-medium-peanut-43px">Mi teléfono es:</h1>
+					<div class="frame-1">
+						<div class="text-field-filled-enabled">
+							<div class="overlap-group overlap">
+								<div class="input-field">
+									<input type="text" name="PhoneNumber" id="mi-tel-mobile" placeholder="+54 9 11 5039609" class="label valign-text-bottom ibmplexsans-medium-tango-14px evit-background telefono-input"></input>
+								</div>
+								<img class="icon-1" src="/img/icon-104@2x.png" alt="Icon" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" onclick="event.preventDefault(); validarYContinuar('mi-tel-mobile','view-form5');">
+					<button class="button button-2" name="9_16241" type="text">Continuar</button>
+				</a>
+				<div class="frame-1171275450">
+					<img class="solid-communication-phone"
+						 src="/img/solid-communication-phone-12@2x.png"
+						 alt="Solid/Communication/Phone" />
+				</div>
+			</div>
+		</div>
+		<div class="container-center-horizontal">
+			<div class="formulario-003-all-breakpoints screen">
+				<div class="overlap-group1-1">
+					<div class="background-variant4">
+						<h1 class="de-bustamante-2520-soy ibmplexserif-semi-bold-peanut-60px">Mi teléfono es:</h1>
+					</div>
+					<a href="#" onclick="event.preventDefault(); validarYContinuar('mi-tel-desktop','view-form5');">
+						<div class="button-3">
+							<div class="button-2 valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px">Continuar</div>
+						</div>
+					</a><a href="#" onclick="event.preventDefault(); showView('view-form3')">
+						<div class="button-4">
+							<div class="valign-text-middle ibmplexsans-semi-bold-hot-cinnamon-16px">Volver</div>
+						</div>
+					</a>
+					<img class="linear-determinate-1" src="/img/linear-determinate-23.png" alt="linear-determinate" />
+					<div class="frame-1171275427">
+						<div class="frame-1-1">
+							<div class="text-field-filled-enabled-1">
+								<div class="overlap-group-1">
+									<div class="input-field-1">
+										<input type="text" id="mi-tel-desktop" name="PhoneNumber" placeholder="+54 9 11 5039609" class="pepe-botella valign-text-middle ibmplexsans-medium-hot-cinnamon-22px evit-background telefono-input">
+										</input>
+									</div>
+									<img class="icon-2" src="/img/icon-105@2x.png" alt="Icon" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="group-1000002753 group">
+						<div class="group-1000002752 group">
+							<img class="solid-communication-phone-1"
+								 src="/img/solid-communication-phone-15@2x.png"
+								 alt="Solid/Communication/Phone" />
+						</div>
+						<p class="necesitas-ayuda-esc ibmplexsans-medium-white-18px">
+							<span class="span0 ibmplexsans-medium-brown-pod-18px">Necesitas ayuda? <br /></span><span class="span ibmplexsans-normal-brown-pod-16px">Escribinos al </span><span class="span ibmplexsans-normal-tango-16px">+54 9 11 5039609</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- PAGINA FORM 5: Mi correo -->
+	<div id="view-form5" class="view">
+		<div class="container-center-horizontal">
+			<div class="form-004 screen">
+				<div class="top-app-bar">
+					<img class="frame" src="/img/frame-23@2x.png" alt="Frame" />
+					<div class="leading-icon">
+						<div class="container">
+							<div class="state-layer"><img class="icon" src="/img/icon-86@2x.png" alt="Icon" /></div>
+						</div>
+					</div>
+				</div>
+				<img class="linear-determinate" src="/img/linear-determinate-25@2x.png" alt="linear-determinate" />
+				<div class="overlap-group">
+					<h1 class="title valign-text-middle ibmplexserif-medium-peanut-43px">Mi correo es:</h1>
+					<div class="frame-1">
+						<div class="text-field-filled-enabled">
+							<input type="email" id="mi-correo-mobile" onblur="validarEmail()" placeholder="pepebotella@gmail.com" class="input-field evit-background email-input"><div class="label valign-text-bottom"></div></input>
+						</div>
+					</div>
+				</div>
+
+				<a href="#" onclick="event.preventDefault(); validarYContinuar('mi-correo-mobile','view-form6');">
+					<button class="button button-2" name="9_16241" type="text">Continuar</button>
+				</a>
+				<div class="frame-1171275450">
+					<img class="solid-communication-phone"
+						 src="/img/solid-communication-phone-12@2x.png"
+						 alt="Solid/Communication/Phone" />
+				</div>
+			</div>
+		</div>
+		<div class="container-center-horizontal">
+			<div class="formulario-004-all-breakpoints screen">
+				<div class="overlap-group1">
+					<div class="background-variant4">
+						<h1 class="de-bustamante-2520-soy ibmplexserif-semi-bold-peanut-60px">Mi correo es:</h1>
+					</div>
+
+					<a href="#" onclick="event.preventDefault(); validarYContinuar('mi-correo-desktop','view-form6');">
+						<div class="button-3">
+							<div class="button-2 valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px">Continuar</div>
+						</div>
+					</a>
+					<a href="#" onclick="event.preventDefault(); showView('view-form4')">
+						<div class="button-4">
+							<div class="valign-text-middle ibmplexsans-semi-bold-hot-cinnamon-16px">Volver</div>
+						</div>
+					</a>
+
+					<img class="linear-determinate-1" src="/img/linear-determinate-26.png" alt="linear-determinate" />
+					<div class="frame-1171275427">
+						<div class="frame-1-1">
+							<div class="text-field-filled-enabled-1">
+								<div class="overlap-group-1">
+									<div class="input-field-1">
+										<input type="text" id="mi-correo-desktop" onblur="validarEmail()" placeholder="ftomas.osses@gmail.com" class="pepe-botella valign-text-middle ibmplexsans-medium-hot-cinnamon-22px evit-background email-input">
+										</input>
+									</div>
+									<img class="icon-1" src="/img/icon-90@2x.png" alt="Icon" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="group-1000002753 group">
+						<div class="group-1000002752 group">
+							<img class="solid-communication-phone-1"
+								 src="/img/solid-communication-phone-11@2x.png"
+								 alt="Solid/Communication/Phone" />
+						</div>
+						<p class="necesitas-ayuda-esc ibmplexsans-medium-white-18px">
+							<span class="span0 ibmplexsans-medium-brown-pod-18px">Necesitas ayuda? <br /></span><span class="span ibmplexsans-normal-brown-pod-16px">Escribinos al </span><span class="span ibmplexsans-normal-tango-16px">+54 9 11 5039609</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- PAGINA FORM 6: Registro -->
+	<div id="view-form6" class="view">
+		<div class="container-center-horizontal">
+			<div class="form-004 screen">
+				<div class="top-app-bar">
+					<img class="frame" src="/img/frame-23@2x.png" alt="Frame" />
+					<div class="leading-icon">
+						<div class="container">
+							<div class="state-layer"><img class="icon" src="/img/icon-86@2x.png" alt="Icon" /></div>
+						</div>
+					</div>
+				</div>
+				<img class="linear-determinate" src="/img/linear-determinate-25@2x.png" alt="linear-determinate" />
+				<div class="overlap-group">
+					<h1 class="title valign-text-middle ibmplexserif-medium-peanut-43px">Mi contraseña es:</h1>
+					<div class="frame-1">
+						<div class="text-field-filled-enabled">
+							<input type="password" id="mi-contraseña-mobile" placeholder="Contraseña" class="input-field evit-background pass-input"><div class="label valign-text-bottom"></div></input>
+						</div>
+					</div>
+				</div>
+				<a href="#" onclick="event.preventDefault(); enviarDatosLote('mi-contraseña-mobile')">
+					<button class="button button-2" name="9_16293" placeholder="Contraseña">Continuar</button>
+				</a>
+				<div class="frame-1171275450">
+					<img class="solid-communication-phone"
+						 src="/img/solid-communication-phone-12@2x.png"
+						 alt="Solid/Communication/Phone" />
+				</div>
+			</div>
+		</div>
+		<div class="container-center-horizontal">
+			<div class="formulario-004-all-breakpoints screen">
+				<div class="overlap-group1">
+					<div class="background-variant4">
+						<h1 class="de-bustamante-2520-soy ibmplexserif-semi-bold-peanut-60px">Mi contraseña es:</h1>
+					</div>
+					<a href="#" onclick="event.preventDefault(); enviarDatosLote('mi-contraseña-desktop')">
+						<div class="button-3">
+							<div class="button-2 valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px">Continuar</div>
+						</div>
+					</a><a href="#" onclick="event.preventDefault(); showView('view-form5')">
+						<div class="button-4">
+							<div class="valign-text-middle ibmplexsans-semi-bold-hot-cinnamon-16px">Volver</div>
+						</div>
+					</a><img class="linear-determinate-1" src="/img/linear-determinate-26.png" alt="linear-determinate" />
+					<div class="frame-1171275427">
+						<div class="frame-1-1">
+							<div class="text-field-filled-enabled-1">
+								<div class="overlap-group-1">
+									<div class="input-field-1">
+										<input type="password" id="mi-contraseña-desktop" placeholder="Contraseña" class="pepe-botella valign-text-middle ibmplexsans-medium-hot-cinnamon-22px evit-background pass-input">
+										</input>
+									</div>
+									<img class="icon-1" src="/img/icon-90@2x.png" alt="Icon" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="group-1000002753 group">
+						<div class="group-1000002752 group">
+							<img class="solid-communication-phone-1"
+								 src="/img/solid-communication-phone-11@2x.png"
+								 alt="Solid/Communication/Phone" />
+						</div>
+						<p class="necesitas-ayuda-esc ibmplexsans-medium-white-18px">
+							<span class="span0 ibmplexsans-medium-brown-pod-18px">Necesitas ayuda? <br /></span><span class="span ibmplexsans-normal-brown-pod-16px">Escribinos al </span><span class="span ibmplexsans-normal-tango-16px">+54 9 11 5039609</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- PAGINA FORM 6.1: Login -->
+	<div id="view-formLogin" class="view">
+		<div class="container-center-horizontal">
+			<div class="form-004 screen">
+				<div class="top-app-bar">
+					<img class="frame" src="/img/frame-23@2x.png" alt="Frame" />
+					<div class="leading-icon">
+						<div class="container">
+							<div class="state-layer"><img class="icon" src="/img/icon-86@2x.png" alt="Icon" /></div>
+						</div>
+					</div>
+				</div>
+				<img class="linear-determinate" src="/img/linear-determinate-25@2x.png" alt="linear-determinate" />
+				<div class="overlap-group">
+					<h1 class="title valign-text-middle ibmplexserif-medium-peanut-43px">Este mail ya existe pone tu contraseña:</h1>
+					<div class="frame-1">
+						<div class="text-field-filled-enabled">
+							<input type="password" id="mi-relogin-mobile" placeholder="Contraseña" class="input-field evit-background relogin-input"><div class="label valign-text-bottom"></div></input>
+						</div>
+					</div>
+				</div>
+				<a href="#" onclick="event.preventDefault(); enviarDatosLoteReLogueado('mi-relogin-mobile')">
+					<button class="button button-2" name="9_16293" placeholder="Contraseña">Continuar</button>
+				</a>
+				<div class="frame-1171275450">
+					<img class="solid-communication-phone"
+						 src="/img/solid-communication-phone-12@2x.png"
+						 alt="Solid/Communication/Phone" />
+				</div>
+			</div>
+		</div>
+		<div class="container-center-horizontal">
+			<div class="formulario-004-all-breakpoints screen">
+				<div class="overlap-group1">
+					<div class="background-variant4">
+						<h1 class="de-bustamante-2520-soy ibmplexserif-semi-bold-peanut-60px">Este mail ya existe pone tu contraseña:</h1>
+					</div>
+					<a href="#" onclick="event.preventDefault(); enviarDatosLoteReLogueado('mi-relogin-desktop')">
+						<div class="button-3">
+							<div class="button-2 valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px">Continuar</div>
+						</div>
+					</a><a href="#" onclick="event.preventDefault(); showView('view-form5')">
+						<div class="button-4">
+							<div class="valign-text-middle ibmplexsans-semi-bold-hot-cinnamon-16px">Volver</div>
+						</div>
+					</a><img class="linear-determinate-1" src="/img/linear-determinate-26.png" alt="linear-determinate" />
+					<div class="frame-1171275427">
+						<div class="frame-1-1">
+							<div class="text-field-filled-enabled-1">
+								<div class="overlap-group-1">
+									<div class="input-field-1">
+										<input type="password" id="mi-relogin-desktop" placeholder="Contraseña" class="pepe-botella valign-text-middle ibmplexsans-medium-hot-cinnamon-22px evit-background relogin-input">
+										</input>
+									</div>
+									<img class="icon-1" src="/img/icon-90@2x.png" alt="Icon" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="group-1000002753 group">
+						<div class="group-1000002752 group">
+							<img class="solid-communication-phone-1"
+								 src="/img/solid-communication-phone-11@2x.png"
+								 alt="Solid/Communication/Phone" />
+						</div>
+						<p class="necesitas-ayuda-esc ibmplexsans-medium-white-18px">
+							<span class="span0 ibmplexsans-medium-brown-pod-18px">Necesitas ayuda? <br /></span><span class="span ibmplexsans-normal-brown-pod-16px">Escribinos al </span><span class="span ibmplexsans-normal-tango-16px">+54 9 11 5039609</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- PAGINA FORM 7: Procesando usuario -->
+	<div id="view-form7" class="view">
+		<div class="carga-de-perfil-1u472 screen">
+			<div class="top-app-bar">
+				<img class="frame" src="/img/frame-23@2x.png" alt="Frame" />
+				<div class="leading-icon">
+					<div class="container">
+						<div class="state-layer"><img class="icon" src="/img/icon-86@2x.png" alt="Icon" /></div>
+					</div>
+				</div>
+			</div>
+			<img class="linear-determinate" src="/img/linear-determinate-12@2x.png" alt="linear-determinate" />
+			<h1 class="title valign-text-middle ibmplexserif-medium-peanut-43px">Estamos creando tu perfil...</h1>
+			<img class="layer_1" src="/img/layer-1-11@2x.png" alt="Layer_1" />
+		</div>
+		<div class="container-center-horizontal">
+			<div class="pre-loading-1u472-all-breakpoints screen">
+				<div class="overlap-group">
+					<div class="background-variant4">
+						<div class="content">
+							<div class="frame-867">
+								<div class="text">
+									<h1 class="estamos-verificando ibmplexserif-semi-bold-peanut-60px">
+										Estamos verificando la información de<br />tu terreno.
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<img class="linear-determinate-1" src="/img/linear-determinate-11.png" alt="linear-determinate" />
+					<div class="group-1000002753 group">
+						<div class="group-1000002752 group">
+							<img class="solid-communication-phone"
+								 src="/img/solid-communication-phone-11@2x.png"
+								 alt="Solid/Communication/Phone" />
+						</div>
+						<p class="necesitas-ayuda-esc ibmplexsans-medium-white-18px">
+							<span class="span0 ibmplexsans-medium-brown-pod-18px">Necesitas ayuda? <br /></span><span class="span ibmplexsans-normal-brown-pod-16px">Escribinos al </span><span class="span ibmplexsans-normal-tango-16px">+54 9 11 5039609</span>
+						</p>
+					</div>
+					<img class="layer_1-1" src="/img/layer-1-6.png" alt="Layer_1" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- PAGINA FORM 8: Procesado terminado -->
+	<div id="view-form8" class="view">
+		<div class="container-center-horizontal">
+			<div class="pre-loading-2u472-all-breakpoints screen">
+				<div class="overlap-group">
+					<div class="background-variant4">
+						<div class="content">
+							<div class="frame-867">
+								<div class="text"><h1 class="listo ibmplexserif-semi-bold-peanut-60px">¡Listo!</h1></div>
+							</div>
+						</div>
+					</div>
+					<img class="linear-determinate" src="/img/linear-determinate-11.png" alt="linear-determinate" />
+					<div class="content-1">
+						<div class="frame-867">
+							<div class="text">
+								<p class="la-primera-parte-del">La primera parte<br />del análisis ya<br />está disponible.</p>
+							</div>
+						</div>
+					</div>
+					<a href="@Url.Action("Dashboard", "Account")">
+						<div class="button">
+							<div class="button-1 valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px">Ver ahora</div>
+						</div>
+					</a>
+					<div class="group-1000002753 group">
+						<div class="group-1000002752 group">
+							<img class="solid-communication-phone"
+								 src="/img/solid-communication-phone-11@2x.png"
+								 alt="Solid/Communication/Phone" />
+						</div>
+						<p class="necesitas-ayuda-esc ibmplexsans-medium-white-18px">
+							<span class="span0 ibmplexsans-medium-brown-pod-18px">Necesitas ayuda? <br /></span><span class="span ibmplexsans-normal-brown-pod-16px">Escribinos al </span><span class="span ibmplexsans-normal-tango-16px">+54 9 11 5039609</span>
+						</p>
+					</div>
+					<img class="layer_1" src="/img/layer-1-3.png" alt="Layer_1" />
+				</div>
+			</div>
+		</div>
+		<div class="form-005 screen">
+			<div class="top-app-bar">
+				<img class="frame" src="/img/frame-21@2x.png" alt="Frame" />
+				<div class="leading-icon">
+					<div class="container">
+						<div class="state-layer"><img class="icon" src="/img/icon-86@2x.png" alt="Icon" /></div>
+					</div>
+				</div>
+			</div>
+			<img class="linear-determinate-1" src="/img/linear-determinate-12@2x.png" alt="linear-determinate" />
+			<h1 class="listo-1 valign-text-middle ibmplexserif-medium-peanut-43px">¡Listo!</h1>
+			<p class="la-primera-parte-del-1 valign-text-middle">La primera parte del análisis ya está disponible</p>
+			<a href="@Url.Action("Dashboard", "Account")">
+				<div class="button-2">
+					<div class="button-3 valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px">Quiero ver</div>
+				</div>
+			</a>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+	<script src="/js/index.js"></script>
+	<script src="/js/redirect.js"></script>
+
+</body>
+</html>

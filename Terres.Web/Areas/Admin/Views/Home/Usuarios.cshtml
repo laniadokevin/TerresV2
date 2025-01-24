@@ -1,0 +1,58 @@
+﻿@using Terres.Web.Models.OLD
+
+@model AdminUsersViewModel
+
+<div id="view-lotes" class="view">
+    <div class="container">
+        <div class="formulario-001-all-breakpoints screen">
+            <div class="overlap-group">
+                <div class="background-variant4 mb-4">
+                    <h1 class="title ibmplexserif-semi-bold-peanut-60px">Listado de Usuarios:</h1>
+                </div>
+
+                <!-- Filtros de búsqueda -->
+                <div class="filters mb-4">
+                    <form method="get" asp-action="Usuarios">
+                        <!-- Filtro por nombre, dirección, teléfono o email -->
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="searchText">Buscar:</label>
+                                <input type="text" class="form-control" id="searchText" name="searchText" placeholder="Buscar por nombre, dirección, teléfono o email" value="@ViewBag.SearchText" />
+                            </div>
+                            <!-- Filtro por tipo de lote -->
+                            
+                            <div class="form-group col-md-2">
+                                <button type="submit" class="btn btn-primary" style="margin-top: 32px;">Filtrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Tabla de lotes -->
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Email</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Teléfono</th>
+                            <th scope="col">Fecha De Alta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Itera sobre los lotes disponibles -->
+                        @foreach (var usera in Model.Users)
+                        {
+                            <tr>
+                                <td>@usera.Email</td>
+                                <td>@usera.Name</td>
+                                <td>@usera.PhoneNumber</td>
+                                <td>@usera.DateAdded</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,284 @@
+﻿@using System.Security.Claims;
+@using Terres.Core.OLD.Entities.ViewModel.Campus
+
+@{
+	Layout = null;
+}
+@model DashboardViewModel
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+	<meta name="og:type" content="website" />
+	<meta name="twitter:card" content="photo" />
+	<link rel="stylesheet" type="text/css" href="/css/menu-vendedores.css" />
+	<link rel="stylesheet" type="text/css" href="/css/home-v-1.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-001-variante-direccion-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-001-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-002-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-003-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/formulario-004-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/pre-loading-1u472-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/pre-loading-2u472-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/dashboard-onboarding.css" />
+	<link rel="stylesheet" type="text/css" href="/css/actividad-2u472-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/onboarding-dashboard-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/ingresar-1-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/tu-terreno-manana-pop-up-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/about-1-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/crear-cuenta-1u472-1-all-breakpoints.css" />
+	<link rel="stylesheet" type="text/css" href="/css/editar-perfil-1u472-all-breakpoints.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+	<style>
+		.screen {
+			display: block;
+		}
+
+			.screen.active {
+				display: block;
+			}
+	</style>
+	<link rel="stylesheet" type="text/css" href="/css/styleguide.css" />
+	<link rel="stylesheet" type="text/css" href="/css/globals.css" />
+</head>
+<body style="margin: 0; background: #fef8ee">
+	<input type="hidden" id="anPageName" name="page" value="home-v-1" />
+
+	<div>
+		<div class="container-center-horizontal">
+			<div class="crear-cuenta-1u472-1-all-breakpoints screen">
+				<div class="top-app-bar">
+					<img class="frame-1" src="/img/frame-53.svg" alt="Frame" />
+					<div class="leading-icon">
+						<div class="container">
+							<div class="state-layer"><img class="icon-1" src="/img/icon-51.svg" alt="Icon" /></div>
+						</div>
+					</div>
+				</div>
+				<h1 class="title ibmplexserif-medium-brown-pod-43px">Crear cuenta</h1>
+				<form method="post" action="@Url.Action("Register", "Account")">
+					@if (!string.IsNullOrEmpty(ViewBag.error as string))
+					{
+						<div class="alert alert-danger" role="alert">
+							@ViewBag.error
+						</div>
+					}
+					<div class="component-1">
+						<div class="group-3675">
+							<div class="email valign-text-bottom ibmplexsans-medium-brown-pod-14px">Email</div>
+							<div class="frame-1-1">
+								<div class="overlap-group">
+									<div class="input-field-1">
+										<input required type="email" name="email" placeholder="ejemplo@gmail.com" class="label valign-text-bottom ibmplexsans-medium-tango-14px evit-background nombre-input"></input>
+									</div>
+									<img class="icon-2" src="/img/icon-69.svg" alt="Icon" />
+								</div>
+							</div>
+						</div>
+						<div class="group-3675">
+							<div class="crear-contrasea valign-text-bottom ibmplexsans-medium-brown-pod-14px">Crear contraseña</div>
+							<div class="frame">
+								<div class="input-field">
+									@* <div class="address valign-text-bottom ibmplexsans-medium-cumin-14px">8 a 16 caracteres</div> *@
+									<input required type="password" name="password" placeholder="8 a 16 caracteres" class="password-field1 address valign-text-bottom ibmplexsans-medium-cumin-14px label valign-text-bottom ibmplexsans-medium-tango-14px evit-background nombre-input"></input>
+									<img class="icon" src="/img/icon-268.svg" alt="Icon" />
+								</div>
+							</div>
+						</div>
+						<div class="group-36759">
+							<div class="repetir-contrasea valign-text-bottom ibmplexsans-medium-brown-pod-14px">Repetir contraseña</div>
+							<div class="frame">
+								<div class="input-field">
+									@* <div class="address valign-text-bottom ibmplexsans-medium-cumin-14px">8 a 16 caracteres</div> *@
+									<input required type="password" placeholder="8 a 16 caracteres" class="password-field2 address valign-text-bottom ibmplexsans-medium-cumin-14px label valign-text-bottom ibmplexsans-medium-tango-14px evit-background nombre-input"></input>
+									<img class="icon" src="/img/icon-268.svg" alt="Icon" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="button">
+						<div class="submitButton button-1 valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px pointer">Crear cuenta</div>
+					</div>
+				</form>
+				<div class="group-36699">
+					<img class="line-21 line" src="/img/line-21-4.svg" alt="Line 21" />
+					<div class="overlap-group-1">
+						<div class="o-registrate-con valign-text-bottom ibmplexsans-medium-jaffa-12px">O registrate con</div>
+						<img class="line-20 line" src="/img/line-20-4.svg" alt="Line 20" />
+					</div>
+				</div>
+				<div class="button-with-centered-icon">
+					<div class="frame-36695">
+						<img class="icon" src="/img/social-icon---google-5.svg" alt="Social icon / Google" />
+						<div class="google valign-text-bottom inter-medium-black-14px">Google</div>
+					</div>
+				</div>
+				<p class="ya-tens-una-cuenta-ingres valign-text-bottom">
+					<span>
+						<span class="span ibmplexsans-normal-peanut-16px">¿Ya tenés una cuenta?</span><span class="span1">&nbsp;</span><span onclick="redirect('/Account/Login')" class="span ibmplexsans-medium-hot-cinnamon-16px pointer">Ingresá</span>
+					</span>
+				</p>
+			</div>
+		</div>
+		<div class="container-center-horizontal">
+			<div class="crear-cuenta-1u472-2 screen">
+				<div class="overlap-group1">
+					<div class="top-nav">
+						<img class="line" src="/img/line-2.svg" alt="Line" />
+						<div class="nav-items">
+							<div class="menu-item-default"><div class="label-1 ibmplexsans-normal-brown-pod-16px">Comprar</div></div>
+							<div class="menu-item-default">
+								<div onclick="redirect('@Url.Action("About","Home")')" class="label-1 ibmplexsans-normal-brown-pod-16px pointer">Sobre nosotros</div>
+							</div>
+							<div class="menu-item-default"><div class="label-1 ibmplexsans-normal-brown-pod-16px">Blog</div></div>
+							<div class="header-menu-default"><div class="label-1 ibmplexsans-normal-brown-pod-16px">FAQs</div></div>
+							<div class="header-menu-default">
+								<div class="label-1 ibmplexsans-normal-brown-pod-16px">Contacto</div>
+							</div>
+							<div class="menu-item-default-1"></div>
+							<div class="menu-item-default-1"></div>
+							<div class="menu-item-default-1"></div>
+						</div>
+						<div class="right-items">
+							<a href="@Url.Action("Login", "Account")">
+								<article class="button-3">
+									<div style="color:var(--hot-cinnamon);" class="button-2 valign-text-middle ibmplexsans-medium-hot-cinnamon-13px">Ingresar</div>
+								</article>
+							</a><a href="#">
+								<article class="button-4">
+									<div class="button-2 valign-text-middle ibmplexsans-medium-seashell-peach-13px">Crear cuenta</div>
+								</article>
+							</a>
+						</div>
+						<img href="@Url.Action("Index", "Account")" class="frame-2 pointer" src="/img/frame-56.svg" alt="Frame" />
+					</div>
+					<div class="flex-row flex">
+						<div class="flex-col flex">
+							<div class="headline">
+								<h1 class="title-1 ibmplexserif-semi-bold-peanut-60px">Crear cuenta</h1>
+								<p class="si-ya-tens-una-cuenta-podes-entrar-ac ibmplexsans-medium-white-20px">
+									<span class="ibmplexsans-medium-brown-pod-20px">Si ya tenés una cuenta podes </span><span onclick="redirect('/Account/Login')" class="ibmplexsans-medium-hot-cinnamon-20px pointer">entrar acá</span>
+								</p>
+							</div>
+							<form method="post" action="@Url.Action("Register", "Account")">
+								@if (!string.IsNullOrEmpty(ViewBag.error as string))
+								{
+									<div class="alert alert-danger" role="alert">
+										@ViewBag.error
+									</div>
+								}
+								<div class="frame-1171275458">
+									<div class="email-1 valign-text-middle ibmplexsans-normal-brown-pod-16px">Email</div>
+									<div class="frame-1-2">
+										<div class="overlap-group-2">
+											<div class="input-field-3 input-field">
+												@* <div class="ftomasossesgmailcom valign-text-middle">ftomas.osses@gmail.com</div> *@
+												<input required type="email" name="email" placeholder="ftomas.osses@gmail.com" class="ftomasossesgmailcom valign-text-middle label valign-text-bottom ibmplexsans-medium-tango-14px evit-background nombre-input"></input>
+											</div>
+											<img class="icon-4" src="/img/icon-270.svg" alt="Icon" />
+										</div>
+									</div>
+								</div>
+								<div class="frame-11712754">
+									<div class="r-contrasea valign-text-middle ibmplexsans-normal-brown-pod-16px">Crear contraseña</div>
+									<div class="input-field-2 input-field">
+										<input required type="password" name="password" placeholder="8 a 16 caracteres" class="password-field1 address-1 valign-text-bottom ibmplexsans-normal-cumin-16px label valign-text-bottom ibmplexsans-medium-tango-14px evit-background nombre-input"></input>
+										@* <div class="address-1 valign-text-bottom ibmplexsans-normal-cumin-16px">8 a 16 caracteres</div> *@
+										<img class="icon-3" src="/img/icon-271.svg" alt="Icon" />
+									</div>
+								</div>
+								<div class="frame-11712754">
+									<div class="r-contrasea valign-text-middle ibmplexsans-normal-brown-pod-16px">Repetir contraseña</div>
+									<div class="input-field-2 input-field">
+										<input required type="password" placeholder="8 a 16 caracteres" class="password-field2 address-1 valign-text-bottom ibmplexsans-normal-cumin-16px label valign-text-bottom ibmplexsans-medium-tango-14px evit-background nombre-input"></input>
+@* 										<div class="address-1 valign-text-bottom ibmplexsans-normal-cumin-16px">8 a 16 caracteres</div>
+ *@										<img class="icon-3" src="/img/icon-271.svg" alt="Icon" />
+									</div>
+								</div>
+								<div class="button-5">
+									<div class="submitButton button-6 valign-text-middle ibmplexsans-semi-bold-seashell-peach-16px pointer">Crear cuenta</div>
+								</div>
+							</form>
+							<div class="group-36699-1">
+								<img class="line-21-1" src="/img/line-21-6.svg" alt="Line 21" />
+								<div class="o-continu-con valign-text-bottom ibmplexsans-medium-jaffa-12px">O continuá con</div>
+								<img class="line-20-1" src="/img/line-20-6.svg" alt="Line 20" />
+							</div>
+							<div class="button-with-centered-icon-1">
+								<div class="frame-36695-1">
+									<img class="social-icon-google" src="/img/social-icon---google-7.svg" alt="Social icon / Google" />
+									<div class="google-1 valign-text-bottom inter-medium-black-14px">Google</div>
+								</div>
+							</div>
+						</div>
+						<div class="flex-col-1">
+							<img class="layer_1" src="/img/layer-1-12.svg" alt="Layer_1" />
+							<div class="group-1000002753 group">
+								<div class="group-1000002752 group">
+									<img class="solid-communication-phone"
+										 src="/img/solid-communication-phone-12.svg"
+										 alt="Solid/Communication/Phone" />
+								</div>
+								<p class="necesitas-ayuda-esc ibmplexsans-medium-white-18px">
+									<span class="span0 ibmplexsans-medium-brown-pod-18px">Necesitas ayuda? <br /></span><span class="span-2 ibmplexsans-normal-brown-pod-16px">Escribinos al </span><span class="span-2 ibmplexsans-normal-tango-16px">+54 9 11 5039609</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+	<script src="/js/redirect.js"></script>
+	<script>
+		document.querySelectorAll('.submitButton').forEach(button => {
+			button.addEventListener('click', function (event) {
+				event.preventDefault();
+
+				let contra1 = '';
+				let contra2 = '';
+
+				$('.password-field1').each(function () {
+					if ($(this).val()) {
+						contra1 = $(this).val();
+					}
+				});
+				$('.password-field2').each(function () {
+					if ($(this).val()) {
+						contra2 = $(this).val();
+					}
+				});
+
+				if (contra1 !== contra2) {
+					toastr.error('Las contraseñas no coinciden. Por favor, verifica.', 'Error', {
+					});
+					return;
+				}
+
+				if (contra1.length < 8 || contra1.length > 15) {
+					toastr.error('La contraseña debe tener entre 8 y 15 caracteres.', 'Error', {
+						closeButton: true,
+						progressBar: true,
+						timeOut: "5000"
+					});
+					return;
+				}
+
+				this.closest('form').submit();
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,484 @@
+﻿@using System.Security.Claims;
+@using Terres.Web.Models.OLD
+
+@{
+    Layout = null;
+    var id = ViewContext.HttpContext.Request.Query["id"].ToString();
+
+}
+@model LoteDetalleViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="/css/menu-vendedores.css" />
+    <link rel="stylesheet" type="text/css" href="/css/home-v-1.css" />
+    <link rel="stylesheet" type="text/css" href="/css/formulario-001-variante-direccion-all-breakpoints.css" />
+    <link rel="stylesheet" type="text/css" href="/css/formulario-001-all-breakpoints.css" />
+    <link rel="stylesheet" type="text/css" href="/css/formulario-002-all-breakpoints.css" />
+    <link rel="stylesheet" type="text/css" href="/css/formulario-003-all-breakpoints.css" />
+    <link rel="stylesheet" type="text/css" href="/css/formulario-004-all-breakpoints.css" />
+    <link rel="stylesheet" type="text/css" href="/css/pre-loading-1u472-all-breakpoints.css" />
+    <link rel="stylesheet" type="text/css" href="/css/pre-loading-2u472-all-breakpoints.css" />
+    <link rel="stylesheet" type="text/css" href="/css/dashboard-onboarding.css" />
+    <link rel="stylesheet" type="text/css" href="/css/actividad-2u472-all-breakpoints.css" />
+    <link rel="stylesheet" type="text/css" href="/css/onboarding-dashboard-all-breakpoints.css" />
+    <link rel="stylesheet" type="text/css" href="/css/ingresar-1-all-breakpoints.css" />
+    <link rel="stylesheet" type="text/css" href="/css/tu-terreno-manana-pop-up-all-breakpoints.css" />
+    <link rel="stylesheet" type="text/css" href="/css/about-1-all-breakpoints.css" />
+    <link rel="stylesheet" type="text/css" href="/css/crear-cuenta-1u472-1-all-breakpoints.css" />
+    <link rel="stylesheet" type="text/css" href="/css/editar-perfil-1u472-all-breakpoints.css" />
+    <link rel="stylesheet" type="text/css" href="/css/info-u47-tu-terreno-hoy-all-breakpoints.css" />
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+    <style>
+        .screen {
+            display: block;
+        }
+
+            .screen.active {
+                display: block;
+            }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/css/styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="/css/globals.css" />
+<style>
+    .modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    }
+
+    .modal-content {
+    background: #fff8f0;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .modal-image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    }
+
+    .modal-text h2 {
+    font-size: 1.5em;
+    color: #643200;
+    margin-bottom: 10px;
+    font-weight: bold;
+    }
+
+    .modal-text p {
+    font-size: 1em;
+    color: #643200;
+    line-height: 1.5;
+    }
+
+    .modal-text strong {
+    font-weight: bold;
+    }
+
+    .modal-button {
+    background: #ff7f3f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    }
+
+    .modal-button:hover {
+    background: #ff9966;
+    }
+
+</style>
+</head>
+<body style="margin: 0; background: #fef8ee">
+    <input type="hidden" id="anPageName" name="page" value="info-u47-tu-terreno-hoy-all-breakpoints" />
+    <div class="container-center-horizontal">
+        <div class="info-u47-tu-terreno-hoy-all-breakpoints screen">
+            <div class="top-app-bar">
+                <img class="frame" src="/img/frame-27.svg" alt="Frame" />
+                <div class="leading-icon">
+                    <div class="container">
+                        <div class="state-layer-1 state-layer-3"><img class="icon" src="/img/icon-51.svg" alt="Icon" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlap-group5">
+                <div class="overlap-group6">
+                    <h1 class="title valign-text-middle ibmplexserif-medium-peanut-43px">@(Model.Lote.Direccion ?? "Bustamante 2520")</h1>
+                    <div class="tabs">
+                        <div class="property-1-default"><img class="tabs-1" src="/img/tabs-8.svg" alt="Tabs" /></div>
+                    </div>
+                    <div class="frame-1171275423">
+                        <div class="frame-68">
+                            <p class="tiene-3-ofertas-en-curso valign-text-middle ibmplexsans-normal-peanut-16px">
+                                <span>
+                                    <span class="span ibmplexsans-normal-peanut-16px">Tiene </span><span class="span ibmplexsans-medium-peanut-16px">3 ofertas</span><span class="span ibmplexsans-normal-peanut-16px">&nbsp;</span><span class="span ibmplexsans-medium-peanut-16px">en curso</span>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="tag"></div>
+                    </div>
+                </div>
+                <div class="frame-1171275422">
+                    <img class="frame-63" src="/img/frame-63-4.svg" alt="Frame 63" />
+                    <div class="frame-64"><img class="download" src="/img/download-4.svg" alt="Download" /></div>
+                </div>
+            </div>
+            <div class="datos-bsicos ibmplexsans-medium-peanut-18px">Datos básicos</div>
+            <div class="cards-stats-shared-group-2 cards-stats-shared-group-5">
+                <div class="data-2-1 data-2-6">
+                    <div class="barrio ibmplexsans-medium-hot-cinnamon-14px">Barrio</div>
+                    <div class="value"><div class="place ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Barrio ?? "Recoleta")</div></div>
+                </div>
+                <div class="data-1 data">
+                    <div class="smp ibmplexsans-medium-hot-cinnamon-14px">SMP</div>
+                    <div class="value-1 value-3">
+                        <div class="x015-054-058-a ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.SMP ?? "015-054-058A")</div>
+                    </div>
+                </div>
+            </div>
+            <div class="parcela ibmplexsans-medium-peanut-18px">Parcela</div>
+            <div class="group-36853">
+                <div class="cards-stats-shared-group">
+                    <div class="data-2-2 data-2-6">
+                        <div class="group-36838">
+                            <div class="frente ibmplexsans-medium-tango-14px">Frente</div>
+                            <div class="x866-m valign-text-middle ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Frente ?? 8.66 )m</div>
+                        </div>
+                        <div class="group-36837">
+                            <div class="fondo ibmplexsans-medium-tango-14px">Fondo</div>
+                            <div class="x4000-m ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Fondo ?? 40.00) m</div>
+                        </div>
+                    </div>
+                    <div class="data-1-1 data-1-4">
+                        <div class="superficie">Superficie</div>
+                        <div class="value"><div class="address">@(Model.DetalleLote?.SuperficieTotal?? 346) m2</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cdigo-urbnistico ibmplexsans-medium-peanut-18px">Código urbánistico</div>
+            <div class="group-36852">
+                <div class="overlap-group">
+                    <div class="cards-stats-shared-group-3 cards-stats-shared-group-5">
+                        <div class="data-2 data">
+                            <div class="unidad-edificable ibmplexsans-medium-hot-cinnamon-14px">Unidad edificable</div>
+                            <div class="value"><div class="usam ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Unidad ?? "USAM")</div></div>
+                        </div>
+                    </div>
+                    <img class="rectangle-1551 rectangle" src="/img/rectangle-1551-6.svg" alt="Rectangle 1551" />
+                </div>
+            </div>
+            <div class="cards-stats-shared-group-4 cards-stats-shared-group-5">
+                <div class="data-2-3 data-2-6">
+                    <div class="group-36851">
+                        <div class="extensin-pisos-y-retros ibmplexsans-medium-hot-cinnamon-14px">Extensión, pisos y retros</div>
+                        <div class="value-2 value-3"><div class="address-1 ibmplexsans-medium-brown-pod-22px">173 m2</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-36850">
+                <div class="cards-stats-shared-group">
+                    <div class="data-2-4 data-2-6">
+                        <div class="altura-segn-cdigo ibmplexsans-medium-hot-cinnamon-14px">Altura según código</div>
+                        <div class="value"><div class="x1720-m ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Altura ?? 17.20) m</div></div>
+                    </div>
+                    <div class="data-1-2 data-1-4">
+                        <div class="mixtura-de-usos ibmplexsans-medium-hot-cinnamon-14px">Mixtura de usos</div>
+                        <div class="value"><div class="nivel-2 ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Mixtura ?? "Nivel 2")</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="patrimonio ibmplexsans-medium-peanut-18px">Patrimonio</div>
+            <div class="group-36847">
+                <div class="overlap-group">
+                    <div class="cards-stats-shared-group-1 cards-stats-shared-group-5">
+                        <div class="data-2 data">
+                            <div class="catalogacin ibmplexsans-medium-hot-cinnamon-14px">Catalogación</div>
+                            <div class="value">
+                                <div class="sin-proteccin ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Catalogacion ?? "Sin protección")</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="rectangle-155 rectangle" src="/img/rectangle-1552-2.svg" alt="Rectangle 1552" />
+                </div>
+            </div>
+            <div class="group-36848">
+                <div class="overlap-group">
+                    <div class="cards-stats-shared-group-1 cards-stats-shared-group-5">
+                        <div class="data-2 data">
+                            <div class="proteccin ibmplexsans-medium-hot-cinnamon-14px">Protección</div>
+                            <div class="value"><div class="desestimado ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Proteccion ?? "Desestimado")</div></div>
+                        </div>
+                    </div>
+                    <img class="rectangle-155 rectangle" src="/img/rectangle-1553-2.svg" alt="Rectangle 1553" />
+                </div>
+            </div>
+            <div class="group-36849">
+                <div class="cards-stats-shared-group">
+                    <div class="data-2-5 data-2-6">
+                        <div class="estado-de-proteccin ibmplexsans-medium-hot-cinnamon-14px">Estado de protección</div>
+                        <div class="value"><div class="nota-caap ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Estado ?? "Nota CAAP")</div></div>
+                    </div>
+                    <div class="data-1-3 data-1-4">
+                        <div class="ley-3056 ibmplexsans-medium-hot-cinnamon-14px">Ley 3056</div>
+                        <div class="value"><div class="si ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Ley3056EdificioAnteriorA1941 ?? "Si")</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-24">
+                <div class="overlap-group1">
+                    <div class="navigation-bar">
+                        <article class="segment" onclick="redirect('/Account/Dashboard')">
+                            <div class="icon-container-1">
+                                <div class="state-layer-2 state-layer-3"></div>
+                            </div>
+                            <div class="label-text ibmplexsans-medium-brown-pod-14px">Home</div>
+                        </article>
+                        <article class="segment" onclick="redirect('/Account/Actividad')">
+                            <div class="icon-container">
+                                <div class="state-layer"></div>
+                            </div>
+                            <div class="label-text ibmplexsans-medium-brown-pod-14px">Actividad</div>
+                        </article>
+                        <article class="segment" onclick="redirect('/Account/Perfil')">
+                            <div class="icon-container">
+                                <div class="state-layer"></div>
+                            </div>
+                            <div class="label-text ibmplexsans-medium-brown-pod-14px">Perfil</div>
+                        </article>
+                    </div>
+                    <img class="icon-home" src="/img/icon-home-1.svg" alt="icon-home" />
+                    <img class="icon-user" src="/img/icon-user-1.svg" alt="icon-user" />
+                    <div class="overlap-group-1">
+                        <img class="icon-message-circle" src="/img/icon-message-circle-26.svg" alt="icon-message-circle" />
+                        <div class="badge">
+                            <div class="badge-label valign-text-middle ibmplexsans-semi-bold-white-12px">3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-center-horizontal">
+        <div class="dashboard-datos screen">
+            <div class="overlap-group4 ibmplexsans-medium-peanut-18px">
+                <img class="base" src="/img/base-3.svg" alt="Base" />
+                <header class="header">
+                    <h1 class="x4xl">Tu terreno hoy</h1>
+                    <div class="paragraph ibmplexsans-medium-peanut-20px">@(Model.Lote.Direccion ?? "Bustamante 2520")</div>
+                </header>
+                <div class="tabs-2">
+                    <div class="property-1-default-1"><img class="tabs-3" src="/img/tabs-10.svg" alt="Tabs" /></div>
+                </div>
+                <div class="cards-stats-shared-group-6 cards-stats-shared-group">
+                    <div class="data-2-7 data-2">
+                        <div class="barrio-1 ibmplexsans-medium-hot-cinnamon-14px">Barrio</div>
+                        <div class="value-3 value"><div class="place-1 ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Barrio ?? "Recoleta")</div></div>
+                    </div>
+                    <div class="data-1-4 data-1">
+                        <div class="smp-1 ibmplexsans-medium-hot-cinnamon-14px">SMP</div>
+                        <div class="value-4 value">
+                            <div class="x015-054-058-a-1 ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.SMP ?? "015-054-058A")</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="datos-bsicos-1">Datos básicos</div>
+                <div class="cards-stats-shared-group-7 cards-stats-shared-group">
+                    <div class="data-2-8 data-2">
+                        <div class="group-36838-1">
+                            <div class="frente-1 ibmplexsans-medium-tango-14px">Frente</div>
+                            <div class="x866-m-1 valign-text-middle ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Frente ?? 8.66 )m</div>
+                        </div>
+                        <div class="group-36837-1">
+                            <div class="fondo-1 ibmplexsans-medium-tango-14px">Fondo</div>
+                            <div class="x4000-m-1 ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Fondo ?? 40.00 ) m</div>
+                        </div>
+                    </div>
+                    <div class="data-1-5 data-1">
+                        <div class="superficie-1">Superficie</div>
+                        <div class="value-3 value"><div class="address-2 address">@(Model.DetalleLote?.SuperficieTotal ?? 346 ) m2</div></div>
+                    </div>
+                </div>
+                <div class="parcela-1">Parcela</div>
+                <div class="cards-stats-shared-group-8 cards-stats-shared-group">
+                    <div class="data-2-9 data-2">
+                        <div class="altura-segn-cdigo-1 ibmplexsans-medium-hot-cinnamon-14px">Altura según código</div>
+                        <div class="value-3 value"><div class="x1720-m-1 ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Altura ?? 17.20) m</div></div>
+                    </div>
+                    <div class="data-1-6 data-1">
+                        <div class="mixtura-de-usos-1 ibmplexsans-medium-hot-cinnamon-14px">Mixtura de usos</div>
+                        <div class="value-3 value">
+                            <div class="nivel-2-1 ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Mixtura ?? "Nivel 2")</div></div>
+                    </div>
+                </div>
+                <div class="cdigo-urbnistico-1">Código urbánistico</div>
+                <div class="overlap-group-2">
+                    <div class="cards-stats-shared-group-9 cards-stats-shared-group">
+                        <div class="data-2-6 data-2">
+                            <div class="unidad-edificable-1 ibmplexsans-medium-hot-cinnamon-14px">Unidad edificable</div>
+                            <div class="value-3 value"><div class="usam-1 ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Unidad ?? "USAM")</div></div>
+                        </div>
+                    </div>
+                    <img class="rectangle-1551-1" src="/img/rectangle-1551-6.svg" alt="Rectangle 1551" />
+                </div>
+                <div class="cards-stats-shared-group-10 cards-stats-shared-group">
+                    <div class="data-2-10 data-2">
+                        <div class="group-36851-1">
+                            <div class="extensin-pisos-y-retros-1 ibmplexsans-medium-hot-cinnamon-14px">
+                                Extensión, pisos y retros
+                            </div>
+                            <div class="value-5 value">
+                                <div class="address-3 address ibmplexsans-medium-brown-pod-22px">173 m2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-stats-shared-group-11 cards-stats-shared-group">
+                    <div class="data-2-11 data-2">
+                        <div class="estado-de-proteccin-1 ibmplexsans-medium-hot-cinnamon-14px">Estado de protección</div>
+                        <div class="value-3 value">
+                            <div class="nota-caap-1 ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Estado ?? "Nota CAAP")</div>
+                        </div>
+                    </div>
+                    <div class="data-1-7 data-1">
+                        <div class="ley-3056-1 ibmplexsans-medium-hot-cinnamon-14px">Ley 3056</div>
+                        <div class="value-3 value"><div class="si-1 ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Ley3056EdificioAnteriorA1941 ?? "Si")</div></div>
+                    </div>
+                </div>
+                <div class="patrimonio-1">Patrimonio</div>
+                <div class="overlap-group1-1">
+                    <div class="cards-stats-shared-group-5 cards-stats-shared-group">
+                        <div class="data-2-6 data-2">
+                            <div class="catalogacin-1 ibmplexsans-medium-hot-cinnamon-14px">Catalogación</div>
+                            <div class="value-3 value">
+                                <div class="sin-proteccin-1 ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Catalogacion ?? "Sin protección")</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="rectangle-155-1" src="/img/rectangle-1552-2.svg" alt="Rectangle 1552" />
+                </div>
+                <div class="overlap-group2">
+                    <div class="cards-stats-shared-group-5 cards-stats-shared-group">
+                        <div class="data-2-6 data-2">
+                            <div class="proteccin-1 ibmplexsans-medium-hot-cinnamon-14px">Protección</div>
+                            <div class="value-3 value">
+                                <div class="desestimado-1 ibmplexsans-medium-brown-pod-22px">@(Model.DetalleLote?.Proteccion ?? "Desestimado")</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="rectangle-155-1" src="/img/rectangle-1553-2.svg" alt="Rectangle 1553" />
+                </div>
+                <div class="group-1000002753">
+                    <div class="group-1000002752">
+                        <img class="solid-communication-phone"
+                             src="/img/solid-communication-phone-7.svg"
+                             alt="Solid/Communication/Phone" />
+                    </div>
+                    <p class="necesitas-ayuda-esc ibmplexsans-medium-white-18px">
+                        <span class="span0 ibmplexsans-medium-brown-pod-18px">Necesitas ayuda? <br /></span><span class="span-1 ibmplexsans-normal-brown-pod-16px">Escribinos al </span><span class="span-1 ibmplexsans-normal-tango-16px">+54 9 11 5039609</span>
+                    </p>
+                </div>
+                <div class="nar">
+                    <div class="field">
+                        <img class="icons" src="/img/icons-1.svg" alt="Icons" />
+                        <div class="search ibmplexsans-normal-tango-16px">Buscador</div>
+                    </div>
+                    <img class="icons-1" src="/img/icons-20.svg" alt="Icons" />
+                    <img class="fills-26515179-04ac"
+                         src="/img/fills-26515179-04ac-8067-8004-2d59bf943290-9.svg"
+                         alt="fills-26515179-04ac-8067-8004-2d59bf943290" />
+                    <div class="frame-20">
+                        <img class="avatar" src="/img/avatar-10.svg" alt="Avatar" />
+                        <div class="frame-19">
+                            <div class="frame-18">
+                                <div class="tag-1"><div class="pro ibmplexsans-normal-white-12px">Verificado</div></div>
+                            </div>
+                            <div class="toms-o ibmplexsans-medium-brown-pod-24px">Tomás. O</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlap-group3">
+                    <div class="frame-1171275428">
+                        <img class="frame-1" src="/img/frame-30.svg" alt="Frame" />
+                        <div class="flex-row" onclick="redirect('/Account/Perfil')">
+                            <img class="icon-user-1" src="/img/icon-user.svg" alt="icon-user" />
+                            <div class="group-1000002714"><div class="text ibmplexsans-medium-brown-pod-18px">Perfil</div></div>
+                        </div>
+                        <div class="group-1000002718" onclick="redirect('/Account/Actividad')">
+                            <div class="mdimessage-processing-outline">
+                                <div class="overlap-group-3">
+                                    <img class="icon-message-circle-1" src="/img/icon-message-circle.svg" alt="icon-message-circle" />
+                                    <div class="badge-1">
+                                        <div class="badge-label-1 valign-text-middle ibmplexsans-semi-bold-black-12px">3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-1 ibmplexsans-medium-brown-pod-18px">Actividad</div>
+                        </div>
+                        <div class="group-1000002720">
+                            <div class="sign-out-icon"><img class="union" src="/img/union-9.svg" alt="Union" /></div>
+                            <div class="salir ibmplexsans-medium-brown-pod-18px">Salir</div>
+                        </div>
+                    </div>
+                    <div class="button" onclick="redirect('/Account/Dashboard')">
+                        <img class="icon-home-1" src="/img/icon-home-28.svg" alt="icon-home" />
+                        <div class="text-2 ibmplexsans-semi-bold-seashell-peach-16px">Home</div>
+                    </div>
+                    <div class="button x01">
+                        <a href="@Url.Action("Dashboard","Account")">
+                            <img class="icon-home" src="/img/icon-home.svg" alt="icon-home">
+                            <div class="text" style="color: white;">Home
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container">
+        <div class="modal-content">
+            <div class="modal-image">
+                <img src="~/img/estamosTrabajando.png" alt="Persona ajustando detalles" />
+            </div>
+            <div class="modal-text">
+                <h2>Estamos ajustando detalles de tu terreno</h2>
+                <p>
+                    En breve te decimos los mts vendibles, plusvalía en USD y más.
+                    <strong>¡Estate atento!</strong>
+                </p>
+            </div>
+            <a href="@Url.Action("Detalle","Lote", new { id = id })" class="modal-button">Entendido</a>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="/js/redirect.js"></script>
+
+</body>
+</html>
